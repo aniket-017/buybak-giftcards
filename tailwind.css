@@ -1,0 +1,203 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  button,
+  input,
+  select,
+  textarea {
+    @apply appearance-none bg-transparent border-0 outline-none;
+  }
+}
+
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .all-\[unset\] {
+    all: unset;
+  }
+}
+
+@import url("https://fonts.googleapis.com/css?family=Figtree:var(--web-small-font-weight),400,var(--web-body-font-weight),600,var(--web-h4-font-weight),var(--web-h5-font-weight),700,var(--web-h6-font-weight)|Source+Serif+4:var(--web-h3-font-weight),var(--web-h1-font-weight),500,var(--web-h2-font-weight)|Inter:400");
+
+:root {
+  --blues-0d-2137: rgba(13, 33, 55, 1);
+  --blues-1a-3a-5c: rgba(26, 58, 92, 1);
+  --blues-2e-6099: rgba(46, 96, 153, 1);
+  --bluesebf-3fa: rgba(235, 243, 250, 1);
+  --card-shadow: 0px 20px 40px 0px rgba(0, 0, 0, 0.05);
+  --greens-1b-4332: rgba(27, 67, 50, 1);
+  --greens-2d-6a-4f: rgba(45, 106, 79, 1);
+  --greens-5-2a-788: rgba(82, 167, 136, 1);
+  --greensa-8d-3c-5: rgba(168, 211, 197, 1);
+  --greensd-4e-9e-2: rgba(212, 233, 226, 1);
+  --neutrals-5a-6662: rgba(90, 102, 98, 1);
+  --neutrals-7a-8a-85: rgba(122, 138, 133, 1);
+  --neutralsa-8b-0ad: rgba(168, 176, 173, 1);
+  --neutralse-8ebe-9: rgba(232, 235, 233, 1);
+  --neutralsfafbfa: rgba(250, 251, 250, 1);
+  --neutralsffffff: rgba(255, 255, 255, 1);
+  --variable-collection-ace-selected: none;
+  --variable-collection-all-brands-selected: initial;
+  --variable-collection-home-depot-selected: none;
+  --variable-collection-logged-in: initial;
+  --variable-collection-lowe-s-selected: none;
+  --variable-collection-trying-to-buy-a-gift-card: none;
+  --web-body-font-family: "Figtree", Helvetica;
+  --web-body-font-size: 20px;
+  --web-body-font-style: normal;
+  --web-body-font-weight: 400;
+  --web-body-letter-spacing: 0px;
+  --web-body-line-height: normal;
+  --web-h1-font-family: "Source Serif 4", Helvetica;
+  --web-h1-font-size: 61px;
+  --web-h1-font-style: normal;
+  --web-h1-font-weight: 500;
+  --web-h1-letter-spacing: 0px;
+  --web-h1-line-height: normal;
+  --web-h2-font-family: "Source Serif 4", Helvetica;
+  --web-h2-font-size: 48px;
+  --web-h2-font-style: normal;
+  --web-h2-font-weight: 600;
+  --web-h2-letter-spacing: 0px;
+  --web-h2-line-height: normal;
+  --web-h3-font-family: "Source Serif 4", Helvetica;
+  --web-h3-font-size: 39px;
+  --web-h3-font-style: normal;
+  --web-h3-font-weight: 600;
+  --web-h3-letter-spacing: 0px;
+  --web-h3-line-height: normal;
+  --web-h4-font-family: "Figtree", Helvetica;
+  --web-h4-font-size: 31px;
+  --web-h4-font-style: normal;
+  --web-h4-font-weight: 600;
+  --web-h4-letter-spacing: 0px;
+  --web-h4-line-height: normal;
+  --web-h5-font-family: "Figtree", Helvetica;
+  --web-h5-font-size: 25px;
+  --web-h5-font-style: normal;
+  --web-h5-font-weight: 600;
+  --web-h5-letter-spacing: 0px;
+  --web-h5-line-height: normal;
+  --web-h6-font-family: "Figtree", Helvetica;
+  --web-h6-font-size: 20px;
+  --web-h6-font-style: normal;
+  --web-h6-font-weight: 600;
+  --web-h6-letter-spacing: 0px;
+  --web-h6-line-height: normal;
+  --web-small-font-family: "Figtree", Helvetica;
+  --web-small-font-size: 16px;
+  --web-small-font-style: normal;
+  --web-small-font-weight: 600;
+  --web-small-letter-spacing: 0px;
+  --web-small-line-height: normal;
+}
+
+:root {
+  --animate-spin: spin 1s linear infinite;
+}
+
+.animate-fade-in {
+  animation: fade-in 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-fade-up {
+  animation: fade-up 1s var(--animation-delay, 0s) ease forwards;
+}
+
+.animate-marquee {
+  animation: marquee var(--duration) infinite linear;
+}
+
+.animate-marquee-vertical {
+  animation: marquee-vertical var(--duration) linear infinite;
+}
+
+.animate-shimmer {
+  animation: shimmer 8s infinite;
+}
+
+.animate-spin {
+  animation: var(--animate-spin);
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes image-glow {
+  0% {
+    opacity: 0;
+    animation-timing-function: cubic-bezier(0.74, 0.25, 0.76, 1);
+  }
+
+  10% {
+    opacity: 0.7;
+    animation-timing-function: cubic-bezier(0.12, 0.01, 0.08, 0.99);
+  }
+
+  to {
+    opacity: 0.4;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes fade-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@keyframes shimmer {
+  0%,
+  90%,
+  to {
+    background-position: calc(-100% - var(--shimmer-width)) 0;
+  }
+
+  30%,
+  60% {
+    background-position: calc(100% + var(--shimmer-width)) 0;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translate(0);
+  }
+
+  to {
+    transform: translateX(calc(-100% - var(--gap)));
+  }
+}
+
+@keyframes marquee-vertical {
+  0% {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(calc(-100% - var(--gap)));
+  }
+}
