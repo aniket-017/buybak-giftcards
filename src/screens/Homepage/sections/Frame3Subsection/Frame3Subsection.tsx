@@ -20,7 +20,7 @@ export const Frame3Subsection = (): JSX.Element => {
       <div className="relative flex w-full flex-col items-center justify-center gap-10 p-[200px] max-md:px-8 max-md:py-20">
         <h2
           id="frame3-subsection-heading"
-          className="relative w-fit mt-[-1.00px] text-center font-web-h2 text-[length:var(--web-h2-font-size)] font-[number:var(--web-h2-font-weight)] leading-[var(--web-h2-line-height)] tracking-[var(--web-h2-letter-spacing)] text-blues-0d-2137 [font-style:var(--web-h2-font-style)]"
+          className="relative text-center w-fit mt-[-1.00px] [font-family:'Source_Serif_4',Helvetica] font-medium text-blues-0d-2137 text-[60px] tracking-[0] leading-[normal]"
         >
           You&apos;re already spending the money. Make it work for you.
         </h2>

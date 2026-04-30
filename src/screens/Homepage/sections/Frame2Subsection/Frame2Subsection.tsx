@@ -52,7 +52,9 @@ const FaqItem = ({
         onClick={() => setIsOpen((prev) => !prev)}
         className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto] text-left cursor-pointer"
       >
-        <span className="relative w-fit mt-[-1.00px] font-web-body font-[number:var(--web-body-font-weight)] text-blues-0d-2137 text-[length:var(--web-body-font-size)] text-center tracking-[var(--web-body-letter-spacing)] leading-[var(--web-body-line-height)] whitespace-nowrap [font-style:var(--web-body-font-style)]">
+        <span 
+        className="relative [font-family:'Source_Serif_4',Helvetica] w-fit mt-[-1.00px] font-medium text-[31px] font-web-body font-[number:var(--web-body-font-weight)] text-blues-0d-2137 text-[length:var(--web-body-font-size)] text-center tracking-[var(--web-body-letter-spacing)] leading-[var(--web-body-line-height)] whitespace-nowrap [font-style:var(--web-body-font-style)]"
+        >
           {question}
         </span>
         <img
@@ -70,7 +72,7 @@ const FaqItem = ({
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <p className="relative self-stretch font-web-body font-[number:var(--web-body-font-weight)] text-blues-0d-2137 text-[length:var(--web-body-font-size)] tracking-[var(--web-body-letter-spacing)] leading-[var(--web-body-line-height)] [font-style:var(--web-body-font-style)]">
+        <p className="text-[25px] relative self-stretch font-web-body font-[number:var(--web-body-font-weight)] text-blues-0d-2137 text-[length:var(--web-body-font-size)] tracking-[var(--web-body-letter-spacing)] leading-[var(--web-body-line-height)] [font-style:var(--web-body-font-style)]">
           {answer}
         </p>
       </div>

@@ -16,8 +16,8 @@ import { Frame2Subsection } from "./sections/Frame2Subsection";
 import { Frame3Subsection } from "./sections/Frame3Subsection";
 import { Frame4Subsection } from "./sections/Frame4Subsection";
 import { Frame5Subsection } from "./sections/Frame5Subsection";
-import { FrameSubsection } from "./sections/FrameSubsection";
-import { FrameWrapperSubsection } from "./sections/FrameWrapperSubsection";
+import { FrameSubsection } from "./sections/FrameSubsection"; // 1. Landing: Spend on Supplies.....
+import { FrameWrapperSubsection } from "./sections/FrameWrapperSubsection"; // 2. Gift Cards With Loyalty Stock
 import { HeaderSubsection } from "./sections/HeaderSubsection";
 import { SectionComponentNodeSubsection } from "./sections/SectionComponentNodeSubsection";
 
@@ -35,11 +35,21 @@ export const Homepage = (): JSX.Element => {
       className="flex min-h-screen w-full flex-col items-start relative bg-neutralsffffff overflow-hidden"
       data-model-id="13:700"
     >
-      <HeaderSubsection />
+
+
       <HeaderWrapperSubsection />
+
+      {/******************* Spend on supplies. **************/}
+
       <FrameSubsection />
+
+      {/************** Gift Cards with Loyalty Stock ***************/}
+
       <section className="flex flex-col items-center justify-center gap-20 p-[200px] relative self-stretch w-full flex-[0_0_auto] z-[4] bg-neutralsffffff">
         <FrameWrapperSubsection />
+
+      {/************** Lowes, HomeDepot, Staples ***************/}
+
         <DivWrapperSubsection />
         <div className="flex items-center justify-center gap-10 relative self-stretch w-full flex-[0_0_auto]">
           <div className="relative w-fit [font-family:'Figtree',Helvetica] font-bold text-blues-1a-3a-5c text-2xl tracking-[0] leading-[normal]">
@@ -51,6 +61,7 @@ export const Homepage = (): JSX.Element => {
             src="https://c.animaapp.com/lRTzVt0W/img/image-3-1@2x.png"
           />
         </div>
+        {/*
         <Frame6Subsection />
         <Frame7Subsection />
         <Frame8Subsection />
@@ -60,19 +71,32 @@ export const Homepage = (): JSX.Element => {
         <Frame12Subsection />
         <Frame13Subsection />
         <TabsWrapperSubsection />
+        */}
       </section>
+
+      {/*****************  Same Supplies  *****************/}
+
       <section className="flex flex-col items-center justify-center gap-20 p-[200px] relative self-stretch w-full flex-[0_0_auto] z-[3] bg-neutralsfafbfa">
         <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto]">
           <DivSubsection />
           <SectionComponentNodeSubsection />
         </div>
       </section>
+
+      {/*****************  FAQ *****************/}
+
       <section className="flex flex-col items-center justify-center gap-10 p-[200px] relative self-stretch w-full flex-[0_0_auto] z-[2] bg-neutralsffffff">
         <Frame1Subsection />
         <Frame2Subsection />
       </section>
+
+      {/*****************  You're already ...  *****************/}
+
       <Frame3Subsection />
-      <div className="w-full max-w-[1728px] z-0 overflow-y-auto flex flex-col items-start relative flex-[0_0_auto]">
+
+      {/*****************  Footer   *****************/}
+
+      <div className="w-full max-w-[2728px] z-0 overflow-y-auto flex flex-col items-start relative flex-[0_0_auto]">
         <footer className="flex flex-col items-center justify-center gap-10 p-10 relative self-stretch w-full flex-[0_0_auto] bg-greens-1b-4332">
           <div className="flex items-start justify-between relative self-stretch w-full flex-[0_0_auto]">
             <Frame4Subsection />
@@ -126,8 +150,10 @@ export const Homepage = (): JSX.Element => {
             </div>
           </div>
           <div className="relative self-stretch w-full h-px bg-greens-2d-6a-4f" />
+          {/*
           <Frame5Subsection />
           <FooterWrapperSubsection />
+          */}
         </footer>
       </div>
     </main>

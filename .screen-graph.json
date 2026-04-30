@@ -67,45 +67,13 @@
   ],
   "edges": [
     {
-      "id": "src/screens/Homepage/sections/HeaderSubsection/HeaderSubsection.tsx:63:10-to-src/screens/Contact/Contact.tsx",
-      "source": "src/screens/Homepage/Homepage.tsx",
-      "target": "src/screens/Contact/Contact.tsx",
-      "data": {
-        "viaRoute": "/contact",
-        "trigger": {
-          "element": "<Link\n            to=\"/contact\"\n            aria-current={isActiveRoute(\"/contact\") ? \"page\" : undefined}\n            className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-greens-5-2a-788\"\n          >\n            <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-greens-2d-6a-4f [font-style:var(--web-body-font-style)]\">\n              Contact Us\n            </span>\n          </Link>",
-          "line": 63,
-          "endLine": 71,
-          "column": 10,
-          "endColumn": 17,
-          "sourceFile": "src/screens/Homepage/sections/HeaderSubsection/HeaderSubsection.tsx"
-        }
-      }
-    },
-    {
-      "id": "src/screens/Homepage/sections/HeaderSubsection/HeaderSubsection.tsx:72:10-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/Homepage/Homepage.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
-      "data": {
-        "viaRoute": "/preregister",
-        "trigger": {
-          "element": "<Link\n            to=\"/preregister\"\n            aria-current={isActiveRoute(\"/preregister\") ? \"page\" : undefined}\n            className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-greens-5-2a-788\"\n          >\n            <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutralsffffff [font-style:var(--web-body-font-style)]\">\n              Pre-register\n            </span>\n          </Link>",
-          "line": 72,
-          "endLine": 80,
-          "column": 10,
-          "endColumn": 17,
-          "sourceFile": "src/screens/Homepage/sections/HeaderSubsection/HeaderSubsection.tsx"
-        }
-      }
-    },
-    {
       "id": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx:15:6-to-src/screens/Homepage/Homepage.tsx",
       "source": "src/screens/Homepage/Homepage.tsx",
       "target": "src/screens/Homepage/Homepage.tsx",
       "data": {
         "viaRoute": "/homepage",
         "trigger": {
-          "element": "<Link\n        aria-label=\"BuyBak homepage\"\n        className=\"inline-flex h-11 flex-[0_0_auto] items-center gap-3\"\n        to=\"/homepage\"\n      >\n        <div\n          aria-hidden=\"true\"\n          className=\"relative h-11 w-[63.22px] bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--12@2x.png)] bg-cover bg-[50%_50%]\"\n        />\n        <p className=\"relative w-fit whitespace-nowrap text-2xl font-normal leading-8 tracking-[-0.60px] text-transparent [font-family:'Figtree',Helvetica]\">\n          <span className=\"font-semibold tracking-[-0.14px] text-[#52a788]\">\n            Buy\n          </span>\n          <span className=\"font-bold tracking-[-0.14px] text-[#2e6099]\">\n            Bak\n          </span>\n        </p>\n      </Link>",
+          "element": "<Link\n        aria-label=\"BuyBak homepage\"\n        className=\"inline-flex h-11 flex-[0_0_auto] items-center gap-3\"\n        to=\"/homepage\"\n      >\n        <div\n          aria-hidden=\"true\"\n          className=\"relative h-11 w-[73.22px] bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--12@2x.png)] bg-cover bg-[50%_50%]\"\n        />\n        <p className=\"relative w-fit whitespace-nowrap text-2xl font-normal leading-8 tracking-[-0.60px] text-transparent [font-family:'Figtree',Helvetica]\">\n          <span className=\"font-semibold tracking-[-0.14px] relative top-3 text-[30px] text-[#52a788]\">\n            Buy\n          </span>\n          <span className=\"font-semibold tracking-[-0.14px] relative top-3 text-[30px] text-[#2e6099]\">\n            Bak\n          </span>\n        </p>\n      </Link>",
           "line": 15,
           "endLine": 32,
           "column": 6,
@@ -233,7 +201,7 @@
       "data": {
         "viaRoute": "/homepage",
         "trigger": {
-          "element": "<Link\n        aria-label=\"BuyBak homepage\"\n        className=\"inline-flex h-11 flex-[0_0_auto] items-center gap-3\"\n        to=\"/homepage\"\n      >\n        <div\n          aria-hidden=\"true\"\n          className=\"relative h-11 w-[63.22px] bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--12@2x.png)] bg-cover bg-[50%_50%]\"\n        />\n        <p className=\"relative w-fit whitespace-nowrap text-2xl font-normal leading-8 tracking-[-0.60px] text-transparent [font-family:'Figtree',Helvetica]\">\n          <span className=\"font-semibold tracking-[-0.14px] text-[#52a788]\">\n            Buy\n          </span>\n          <span className=\"font-bold tracking-[-0.14px] text-[#2e6099]\">\n            Bak\n          </span>\n        </p>\n      </Link>",
+          "element": "<Link\n        aria-label=\"BuyBak homepage\"\n        className=\"inline-flex h-11 flex-[0_0_auto] items-center gap-3\"\n        to=\"/homepage\"\n      >\n        <div\n          aria-hidden=\"true\"\n          className=\"relative h-11 w-[73.22px] bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--12@2x.png)] bg-cover bg-[50%_50%]\"\n        />\n        <p className=\"relative w-fit whitespace-nowrap text-2xl font-normal leading-8 tracking-[-0.60px] text-transparent [font-family:'Figtree',Helvetica]\">\n          <span className=\"font-semibold tracking-[-0.14px] relative top-3 text-[30px] text-[#52a788]\">\n            Buy\n          </span>\n          <span className=\"font-semibold tracking-[-0.14px] relative top-3 text-[30px] text-[#2e6099]\">\n            Bak\n          </span>\n        </p>\n      </Link>",
           "line": 15,
           "endLine": 32,
           "column": 6,

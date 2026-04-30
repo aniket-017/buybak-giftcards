@@ -19,13 +19,13 @@ export const HeaderWrapperSubsection = (): JSX.Element => {
       >
         <div
           aria-hidden="true"
-          className="relative h-11 w-[63.22px] bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--12@2x.png)] bg-cover bg-[50%_50%]"
+          className="relative h-11 w-[73.22px] bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--12@2x.png)] bg-cover bg-[50%_50%]"
         />
         <p className="relative w-fit whitespace-nowrap text-2xl font-normal leading-8 tracking-[-0.60px] text-transparent [font-family:'Figtree',Helvetica]">
-          <span className="font-semibold tracking-[-0.14px] text-[#52a788]">
+          <span className="font-semibold tracking-[-0.14px] relative top-3 text-[30px] text-[#52a788]">
             Buy
           </span>
-          <span className="font-bold tracking-[-0.14px] text-[#2e6099]">
+          <span className="font-semibold tracking-[-0.14px] relative top-3 text-[30px] text-[#2e6099]">
             Bak
           </span>
         </p>
@@ -74,7 +74,7 @@ export const HeaderWrapperSubsection = (): JSX.Element => {
               className="inline-flex flex-[0_0_auto] items-center justify-center gap-2.5"
               to={item.to}
             >
-              <span className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]">
+              <span className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]">
                 {item.label}
               </span>
             </Link>

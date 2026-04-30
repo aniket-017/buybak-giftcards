@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const content = {
   title: "Gift Cards with Loyalty Stock",
-  description: "Guaranteed cards. Instant delivery. Real stock.",
+  description: " ",
   ctaLabel: "View All",
   ctaHref: "/gift-cards",
   iconSrc: "https://c.animaapp.com/lRTzVt0W/img/icon.svg",
@@ -15,6 +15,7 @@ export const FrameWrapperSubsection = (): JSX.Element => {
       aria-labelledby="gift-cards-section-title"
     >
       <div className="inline-flex flex-col items-start gap-3 relative flex-[0_0_auto]">
+        {/******
         <h2
           id="gift-cards-section-title"
           className="relative w-fit mt-[-1.00px] font-web-h2 font-[number:var(--web-h2-font-weight)] text-blues-0d-2137 text-[length:var(--web-h2-font-size)] tracking-[var(--web-h2-letter-spacing)] leading-[var(--web-h2-line-height)] [font-style:var(--web-h2-font-style)]"
@@ -24,6 +25,16 @@ export const FrameWrapperSubsection = (): JSX.Element => {
         <p className="relative w-fit font-web-body font-[number:var(--web-body-font-weight)] text-neutrals-7a-8a-85 text-[length:var(--web-body-font-size)] tracking-[var(--web-body-letter-spacing)] leading-[var(--web-body-line-height)] whitespace-nowrap [font-style:var(--web-body-font-style)]">
           {content.description}
         </p>
+        ******/}
+          <h1
+            id="frame-subsection-heading"
+            className="relative w-[1000px] mt-[-1.00px] [font-family:'Source_Serif_4',Helvetica] font-medium text-blues-0d-2137 text-[60px] tracking-[0] leading-[normal]"
+          >
+            {content.title}
+          </h1>
+          <p className="relative w-fit font-web-body font-[number:var(--web-body-font-weight)] text-neutrals-7a-8a-85 text-[30px] tracking-[var(--web-body-letter-spacing)] leading-[var(--web-body-line-height)] whitespace-nowrap [font-style:var(--web-body-font-style)]">
+            {content.description}
+          </p>
       </div>
       <Link
         className="gap-3 inline-flex items-center justify-center relative flex-[0_0_auto] rounded-[100px] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-greens-2d-6a-4f"

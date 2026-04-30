@@ -26,9 +26,8 @@ export const Frame4Subsection = (): JSX.Element => {
           ))}
         </h2>
       </div>
-      <p className="relative w-[343px] text-base font-normal leading-[26px] tracking-[0] text-greensa-8d-3c-5 [font-family:'Inter',Helvetica]">
-        Loyalty rewards that passively build a stock portfolio. Automatically,
-        with every purchase.
+      <p className="relative text-[20px] w-[543px] text-base font-normal leading-[26px] tracking-[0] text-greensa-8d-3c-5 [font-family:'Inter',Helvetica]">
+        Make Money as you Spend Money !
       </p>
     </section>
   );

@@ -18,11 +18,11 @@ const rewardCards: RewardCard[] = [
   {
     id: 1,
     to: "/checkout2",
-    amount: "$1000.00",
+    amount: "$1000",
     reward: "4.9%",
     rewardLabel: "STOCK REWARDS",
     logoClassName:
-      "w-[63.22px] h-11 bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--21@2x.png)] relative bg-cover bg-[50%_50%] shrink-0",
+      "w-[73.22px] h-11 bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--21@2x.png)] relative bg-cover bg-[50%_50%] shrink-0",
     chartSrc: "https://c.animaapp.com/lRTzVt0W/img/image-1-5@2x.png",
     chartAlt: "Stock rewards chart",
     cardClassName:
@@ -35,11 +35,11 @@ const rewardCards: RewardCard[] = [
   {
     id: 2,
     to: "/checkout2",
-    amount: "$1000",
-    reward: "4.9%",
+    amount: "$2500",
+    reward: "5.5%",
     rewardLabel: "STOCK REWARDS",
     logoClassName:
-      "w-[63.22px] h-11 bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--21@2x.png)] relative bg-cover bg-[50%_50%] shrink-0",
+      "w-[73.22px] h-11 bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--21@2x.png)] relative bg-cover bg-[50%_50%] shrink-0",
     chartSrc: "https://c.animaapp.com/lRTzVt0W/img/image-2-3@2x.png",
     chartAlt: "Stock rewards illustration",
     cardClassName:
@@ -51,11 +51,11 @@ const rewardCards: RewardCard[] = [
   {
     id: 3,
     to: "/checkout2",
-    amount: "$1000",
-    reward: "4.9%",
+    amount: "$4000",
+    reward: "6.0%",
     rewardLabel: "STOCK REWARDS",
     logoClassName:
-      "w-[63.22px] h-11 bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--21@2x.png)] relative bg-cover bg-[50%_50%] shrink-0",
+      "w-[73.22px] h-11 bg-[url(https://c.animaapp.com/lRTzVt0W/img/image--buybak--21@2x.png)] relative bg-cover bg-[50%_50%] shrink-0",
     chartSrc: "https://c.animaapp.com/lRTzVt0W/img/image-1-8@2x.png",
     chartAlt: "Stock rewards brand graphic",
     cardClassName:
@@ -82,7 +82,7 @@ export const DivWrapperSubsection = (): JSX.Element => {
           <article className={card.innerClassName}>
             <div className="flex items-center justify-between relative self-stretch w-full flex-[0_0_auto] gap-4">
               <div className={card.logoClassName} aria-hidden="true" />
-              <div className="relative w-fit font-web-h5 font-[number:var(--web-h5-font-weight)] text-blues-0d-2137 text-[length:var(--web-h5-font-size)] tracking-[var(--web-h5-letter-spacing)] leading-[var(--web-h5-line-height)] whitespace-nowrap [font-style:var(--web-h5-font-style)]">
+              <div className="text-[55px] relative w-fit font-web-h4 font-[number:var(--web-h4-font-weight)] text-blues-0d-2137 tracking-[var(--web-h4-letter-spacing)] leading-[var(--web-h4-line-height)] whitespace-nowrap [font-style:var(--web-h4-font-style)]">
                 {card.amount}
               </div>
             </div>
