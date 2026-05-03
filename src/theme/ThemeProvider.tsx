@@ -5,10 +5,16 @@ import {
   ThemeProvider as MuiThemeProvider,
 } from "@mui/material";
 
-const colors = {
+export const colors = {
   blueDark: "rgba(13, 33, 55, 1)",
   blueDeep: "rgba(26, 58, 92, 1)",
   blueSoft: "rgba(235, 243, 250, 1)",
+  bluePrimary: "rgba(26, 58, 92, 1)",
+  blueLight: "rgba(235, 243, 250, 1)",
+  greenDarkest: "rgba(27, 67, 50, 1)",
+  greenDark: "rgba(45, 106, 79, 1)",
+  greenLight2: "rgba(168, 211, 197, 1)",
+  greenLighter: "rgba(212, 233, 226, 1)",
   greenFooter: "rgba(27, 67, 50, 1)",
   greenPrimary: "rgba(45, 106, 79, 1)",
   greenAccent: "rgba(82, 167, 136, 1)",
@@ -18,6 +24,7 @@ const colors = {
   neutralMuted: "rgba(122, 138, 133, 1)",
   neutralSoft: "rgba(168, 176, 173, 1)",
   neutralBorder: "rgba(232, 235, 233, 1)",
+  neutralText: "rgba(122, 138, 133, 1)",
   neutralAlt: "rgba(250, 251, 250, 1)",
   white: "rgba(255, 255, 255, 1)",
 };
@@ -163,6 +170,18 @@ const appTheme = createTheme({
   },
   spacing: 4,
   custom: {
+    blues0d2137: colors.blueDark,
+    blues1a3a5c: colors.bluePrimary,
+    bluesebf3fa: colors.blueLight,
+    greens1b4332: "rgba(27, 67, 50, 1)",
+    greens2d6a4f: colors.greenDark,
+    greens52a788: colors.greenPrimary,
+    greensa8d3c5: colors.greenLight,
+    greensd4e9e2: colors.greenLighter,
+    neutrals7a8a85: colors.neutralText,
+    neutralse8ebe9: colors.neutralBorder,
+    neutralsfafbfa: colors.neutralSoft,
+    neutralsffffff: colors.white,
     gradients: {
       surface:
         "linear-gradient(117deg, rgba(240,247,244,1) 0%, rgba(242,248,246,1) 8%, rgba(245,250,248,1) 17%, rgba(247,251,249,1) 25%, rgba(250,252,251,1) 33%, rgba(252,254,253,1) 42%, rgba(255,255,255,1) 50%, rgba(252,253,254,1) 60%, rgba(249,252,253,1) 70%, rgba(246,250,251,1) 80%, rgba(243,249,250,1) 90%, rgba(240,247,249,1) 100%)",

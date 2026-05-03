@@ -1,8 +1,19 @@
+import { Link, useLocation } from "react-router-dom";
 import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
 
 const actions = [
-  { label: "Browse Gift Cards", variant: "contained" as const },
-  { label: "Learn More", variant: "outlined" as const },
+  {
+    label: "Browse Gift Cards",
+    variant: "contained" as const,
+    color: "primary" as const,
+    to: "/preregister"
+  },
+  {
+    label: "Learn More",
+    variant: "outlined" as const,
+    color: "secondary" as const,
+    to: "/contactpopup"
+  },
 ];
 
 export const HeroFeatureSection = (): JSX.Element => {
@@ -24,7 +35,7 @@ export const HeroFeatureSection = (): JSX.Element => {
     >
       <Stack
         direction={{ xs: "column", md: "row" }}
-        spacing={{ xs: 18, md: 65 }}
+        spacing={{ xs: 15, md: 65 }}
         alignItems="center"
         justifyContent="center"
       >
@@ -34,7 +45,7 @@ export const HeroFeatureSection = (): JSX.Element => {
             flex: "0 0 auto",
             alignItems: { xs: "center", md: "flex-start" },
             pb: { xs: 10, md: "200px" },
-            maxWidth: { md: 900 },
+            maxWidth: { md: 750 },
           }}
         >
           <Typography
@@ -42,7 +53,7 @@ export const HeroFeatureSection = (): JSX.Element => {
             sx={{
               mt: "-1px",
               fontFamily: '"Source Serif 4", "Times New Roman", serif',
-              fontSize: "48px",
+              fontSize: "40px",
               fontWeight: 500,
               lineHeight: "normal",
               letterSpacing: 0,
@@ -67,19 +78,31 @@ export const HeroFeatureSection = (): JSX.Element => {
           </Typography>
           <Stack
             direction="row"
-            spacing={{ xs: 1.5, md: 2.5 }}
+            spacing={{ xs: 2.5, md: 2.5 }}
             flexWrap="wrap"
             useFlexGap
           >
-            {actions.map((action) => (
-              <Button
-                key={action.label}
-                variant={action.variant}
-                color={action.variant === "contained" ? "primary" : "secondary"}
-              >
-                {action.label}
-              </Button>
-            ))}
+          {actions.map((action) => (
+                  <Link
+                    key={action.label}
+                    aria-current="page"
+                    className="inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2"
+                    to={action.to}
+                  >
+                      <Button
+                        key={action.label}
+                        variant={action.variant}
+                        color={action.color}
+                        sx={{
+                          minWidth: "auto",
+                          px: 8,
+                          py: 2,
+                        }}
+                      >
+                          {action.label}
+                      </Button>
+                  </Link>
+          ))}
           </Stack>
         </Stack>
         <Box

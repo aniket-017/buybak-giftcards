@@ -16,15 +16,10 @@ export const ContentHeadingSection = (): JSX.Element => {
       }}
     >
       <Stack
-        direction="row"
-        justifyContent="space-between"
+        direction={{ xs: "column", md: "row" }}
+        spacing={{ xs: 15, md: 65 }}
         alignItems="center"
-        spacing={3}
-        sx={{
-          width: "100%",
-          flexWrap: { xs: "wrap", sm: "nowrap" },
-          rowGap: "var(--responsive-gaptertiary)",
-        }}
+        justifyContent="center"
       >
         <Stack
           component="header"
@@ -40,7 +35,7 @@ export const ContentHeadingSection = (): JSX.Element => {
               mt: "-1px",
               color: "text.primary",
               fontFamily: '"Source Serif 4", "Times New Roman", serif',
-              fontSize: "48px",
+              fontSize: "40px",
               fontWeight: 500,
               lineHeight: "normal",
               letterSpacing: "0px",

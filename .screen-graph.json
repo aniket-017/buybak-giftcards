@@ -73,6 +73,15 @@
       "dataModelId": "27:2905"
     },
     {
+      "id": "src/screens/GiftcardsTablet/GiftcardsTablet.tsx",
+      "label": "GiftcardsTablet",
+      "routes": [
+        "/giftcardstablet"
+      ],
+      "type": "screen",
+      "dataModelId": "461:36156"
+    },
+    {
       "id": "src/screens/Homepage/Homepage.tsx",
       "label": "Homepage",
       "routes": [],
@@ -88,6 +97,12 @@
     {
       "id": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx",
       "label": "HeaderWrapperSubsection",
+      "routes": [],
+      "type": "component"
+    },
+    {
+      "id": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx",
+      "label": "TopNavigationSection",
       "routes": [],
       "type": "component"
     },
@@ -406,17 +421,49 @@
       }
     },
     {
-      "id": "src/screens/GiftcardsWeb/sections/GiftCardGridSubsection/GiftCardGridSubsection.tsx:237:4-to-src/screens/CheckoutPopUpWrapper/CheckoutPopUpWrapper.tsx",
-      "source": "src/screens/GiftcardsWeb/sections/GiftCardGridSubsection/GiftCardGridSubsection.tsx",
-      "target": "src/screens/CheckoutPopUpWrapper/CheckoutPopUpWrapper.tsx",
+      "id": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx:88:18-to-src/screens/ContactPopUp/ContactPopUp.tsx",
+      "source": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx",
+      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
       "data": {
-        "viaRoute": "/checkoutpopup",
+        "viaRoute": "/contactpopup",
         "trigger": {
-          "element": "<MuiLink\n      component={RouterLink}\n      to=\"/checkoutpopup\"\n      underline=\"none\"\n      color=\"inherit\"\n      aria-label={`Buy gift card ${item.amount}`}\n      sx={{\n        width: \"100%\",\n        display: \"block\",\n        borderRadius: 6,\n        overflow: \"hidden\",\n        bgcolor: theme.palette.common.white,\n        border: item.outerBorder\n          ? `1px solid ${theme.palette.divider}`\n          : \"none\",\n        boxShadow: theme.custom.shadows.card,\n      }}\n    >\n      {cardContent}\n    </MuiLink>",
-          "line": 237,
-          "endLine": 256,
-          "column": 4,
-          "endColumn": 14,
+          "element": "<Link\n                    key=\"Pre-register\"\n                    aria-current=\"page\"\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n                    to=\"/contactpopup\"\n                  >\n\t\t\t\t\t  <Button\n\t\t\t\t\t\tvariant=\"outlinedd\"\n\t\t\t\t\t\tcolor=\"secondary\"\n\t\t\t\t\t\thref=\"#contactpopup\"\n\t\t\t\t\t\tsx={{\n\t\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t\t  px: 8,\n\t\t\t\t\t\t  py: 2,\n\t\t\t\t\t\t}}\n\t\t\t\t\t  >\n\t\t\t\t\t\t  Contact us\n\t\t\t\t\t  </Button>\n                  </Link>",
+          "line": 88,
+          "endLine": 106,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx:108:18-to-src/screens/Preregister/Preregister.tsx",
+      "source": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx",
+      "target": "src/screens/Preregister/Preregister.tsx",
+      "data": {
+        "viaRoute": "/preregister",
+        "trigger": {
+          "element": "<Link\n                    key=\"Pre-register\"\n                    aria-current=\"page\"\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n                    to=\"/preregister\"\n                  >\n\t\t\t\t\t  <Button\n\t\t\t\t\t\tvariant=\"contained\"\n\t\t\t\t\t\tcolor=\"primary\"\n\t\t\t\t\t\thref=\"#pre-register\"\n\t\t\t\t\t\tsx={{\n\t\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t\t  px: 8,\n\t\t\t\t\t\t  py: 2,\n\t\t\t\t\t\t}}\n\t\t\t\t\t  >\n\t\t\t\t\t\t  Pre-register\n\t\t\t\t\t  </Button>\n                  </Link>",
+          "line": 108,
+          "endLine": 126,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src/screens/GiftcardsWeb/sections/GiftCardGridSubsection/GiftCardGridSubsection.tsx:166:12-to-src/screens/Preregister/Preregister.tsx",
+      "source": "src/screens/GiftcardsWeb/sections/GiftCardGridSubsection/GiftCardGridSubsection.tsx",
+      "target": "src/screens/Preregister/Preregister.tsx",
+      "data": {
+        "viaRoute": "/preregister",
+        "trigger": {
+          "element": "<Link\n                aria-label=\"Close preregistration\"\n                className=\"flex h-10 w-10 items-center justify-center\"\n                to=\"/preregister\"\n            >\n            <CardContent\n              sx={{\n                p: card.cardPadding,\n                \"&:last-child\": { pb: card.cardPadding },\n              }}\n            >\n              <Box\n                sx={{\n                  aspectRatio: \"1.52\",\n                  display: \"flex\",\n                  flexDirection: \"column\",\n                  justifyContent: \"space-between\",\n                  width: \"100%\",\n                }}\n              >\n                <Stack\n                  direction=\"row\"\n                  justifyContent=\"space-between\"\n                  alignItems=\"center\"\n                >\n                  <Box\n                    component=\"img\"\n                    src={card.brandImage}\n                    alt=\"Buyback logo\"\n                    sx={{\n                      width: \"63.22px\",\n                      height: \"44px\",\n                      objectFit: \"cover\",\n                      flexShrink: 0,\n                    }}\n                  />\n                  <Typography\n                    component=\"p\"\n                    variant=\"h1\"\n                    sx={{\n                      color: theme.palette.text.primary,\n                      whiteSpace: \"nowrap\",\n                      fontSize: '70px',\n                    }}\n                  >\n                    {card.amount}\n                  </Typography>\n                </Stack>\n                <Stack\n                  direction=\"row\"\n                  justifyContent=\"space-between\"\n                  alignItems=\"center\"\n                >\n                  <Stack spacing={0.25} justifyContent=\"center\">\n                    <Typography\n                      component=\"p\"\n                      variant=\"h4\"\n                      sx={{\n                        color: theme.palette.buybak.greenPrimary,\n                        whiteSpace: \"nowrap\",\n                      }}\n                    >\n                      {card.reward}\n                    </Typography>\n                    <Typography\n                      component=\"p\"\n                      variant=\"caption\"\n                      sx={{\n                        color: theme.palette.text.secondary,\n                        whiteSpace: \"nowrap\",\n                      }}\n                    >\n                      {card.rewardLabel}\n                    </Typography>\n                  </Stack>\n                  <Box\n                    component=\"img\"\n                    src={card.productImage}\n                    alt={card.productImageAlt}\n                    sx={{\n                      width: `${card.productImageWidth}px`,\n                      height: `${card.productImageHeight}px`,\n                      objectFit: card.productImageFit,\n                      flexShrink: 0,\n                    }}\n                  />\n                </Stack>\n              </Box>\n            </CardContent>\n            </Link>",
+          "line": 166,
+          "endLine": 255,
+          "column": 12,
+          "endColumn": 19,
           "sourceFile": "src/screens/GiftcardsWeb/sections/GiftCardGridSubsection/GiftCardGridSubsection.tsx"
         }
       }

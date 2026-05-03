@@ -11,10 +11,11 @@ import { Link as RouterLink } from "react-router-dom";
 type GiftCardItem = {
   amount: string;
   reward: string;
-  imageSrc: string;
-  imageWidth: number;
-  imageHeight: number;
-  imageFit?: "contain" | "cover";
+  brandImage: string;
+  productImage: string;
+  productImageWidth: number;
+  productImageHeight: number;
+  productImageFit?: "contain" | "cover";
   clickable?: boolean;
   padding?: number;
   outerBorder?: boolean;
@@ -25,10 +26,11 @@ const giftCards: GiftCardItem[] = [
   {
     amount: "$1000",
     reward: "4.9%",
-    imageSrc: "/img/image-1-3.png",
-    imageWidth: 127,
-    imageHeight: 60,
-    imageFit: "cover",
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-1-3.png",
+    productImageWidth: 127,
+    productImageHeight: 60,
+    productImageFit: "cover",
     clickable: true,
     padding: 8,
     innerShadow: true,
@@ -36,10 +38,11 @@ const giftCards: GiftCardItem[] = [
   {
     amount: "$2100",
     reward: "5.5%",
-    imageSrc: "/img/image-1-3.png",
-    imageWidth: 127,
-    imageHeight: 60,
-    imageFit: "cover",
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-1-3.png",
+    productImageWidth: 127,
+    productImageHeight: 60,
+    productImageFit: "cover",
     clickable: true,
     padding: 8,
     innerShadow: true,
@@ -47,10 +50,11 @@ const giftCards: GiftCardItem[] = [
   {
     amount: "$6000",
     reward: "6.0%",
-    imageSrc: "/img/image-1-3.png",
-    imageWidth: 127,
-    imageHeight: 60,
-    imageFit: "cover",
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-1-3.png",
+    productImageWidth: 127,
+    productImageHeight: 60,
+    productImageFit: "cover",
     clickable: false,
     padding: 8,
     innerShadow: true,
@@ -58,58 +62,64 @@ const giftCards: GiftCardItem[] = [
   {
     amount: "$750",
     reward: "4.9%",
-    imageSrc: "/img/image-2-2.png",
-    imageWidth: 111,
-    imageHeight: 70,
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-2-2.png",
+    productImageWidth: 111,
+    productImageHeight: 70,
     clickable: true,
     padding: 8,
   },
   {
     amount: "$2500",
     reward: "5.5%",
-    imageSrc: "/img/image-2-2.png",
-    imageWidth: 111,
-    imageHeight: 70,
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-2-2.png",
+    productImageWidth: 111,
+    productImageHeight: 70,
     clickable: true,
     padding: 8,
   },
   {
     amount: "$4000",
     reward: "6.0%",
-    imageSrc: "/img/image-2-2.png",
-    imageWidth: 111,
-    imageHeight: 70,
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-2-2.png",
+    productImageWidth: 111,
+    productImageHeight: 70,
     clickable: true,
     padding: 8,
   },
   {
     amount: "$900",
     reward: "4.9%",
-    imageSrc: "/img/image-1-6.png",
-    imageWidth: 148,
-    imageHeight: 30,
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-1-6.png",
+    productImageWidth: 148,
+    productImageHeight: 30,
     clickable: true,
-    padding: 6,
+    padding: 8,
     outerBorder: true,
   },
   {
     amount: "$1500",
     reward: "5.5%",
-    imageSrc: "/img/image-1-6.png",
-    imageWidth: 148,
-    imageHeight: 30,
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-1-6.png",
+    productImageWidth: 148,
+    productImageHeight: 30,
     clickable: true,
-    padding: 6,
+    padding: 8,
     outerBorder: true,
   },
   {
     amount: "$5000",
     reward: "6.0%",
-    imageSrc: "/img/image-1-6.png",
-    imageWidth: 148,
-    imageHeight: 30,
+    brandImage: "/img/image-buybak-2.png",
+    productImage: "/img/image-1-6.png",
+    productImageWidth: 148,
+    productImageHeight: 30,
     clickable: true,
-    padding: 6,
+    padding: 8,
     outerBorder: true,
   },
 ];
@@ -133,127 +143,117 @@ type GiftCardTileProps = {
   item: GiftCardItem;
 };
 
-const GiftCardTile = ({ item }: GiftCardTileProps): JSX.Element => {
+const GiftCardTile = ({ card }: GiftCardTileProps): JSX.Element => {
   const theme = useTheme();
 
-  const cardContent = (
-    <Box
-      sx={{
-        width: "100%",
-        bgcolor: theme.palette.common.white,
-        border: `1px solid ${theme.palette.divider}`,
-        borderRadius: 6,
-        boxShadow: item.innerShadow
-          ? "0px 20px 40px rgba(0, 0, 0, 0.15)"
-          : "none",
-        p: item.padding ?? 8,
-        aspectRatio: "1.52 / 1",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-      }}
-    >
-      <Stack
-        direction="row"
-        justifyContent="space-between"
-        alignItems="flex-start"
-      >
-        <BuyBakMark />
-        <Typography
-          component="p"
-          sx={{
-            fontFamily: '"Figtree", Helvetica, Arial, sans-serif',
-            fontWeight: 600,
-            fontSize: "45px",
-            lineHeight: "normal",
-            letterSpacing: 0,
-            color: theme.palette.text.primary,
-            whiteSpace: "nowrap",
-          }}
-        >
-          {item.amount}
-        </Typography>
-      </Stack>
-      <Stack
-        direction="row"
-        justifyContent="space-between"
-        alignItems="flex-end"
-      >
-        <Stack spacing={0.25}>
-          <Typography
-            component="p"
-            variant="h4"
-            sx={{
-              color: theme.palette.brandGreen.dark,
-              whiteSpace: "nowrap",
-            }}
-          >
-            {item.reward}
-          </Typography>
-          <Typography
-            component="p"
-            variant="caption"
-            sx={{
-              color: theme.palette.text.secondary,
-              whiteSpace: "nowrap",
-            }}
-          >
-            STOCK REWARDS
-          </Typography>
-        </Stack>
-        <Box
-          component="img"
-          src={item.imageSrc}
-          alt=""
-          sx={{
-            width: item.imageWidth,
-            height: item.imageHeight,
-            objectFit: item.imageFit ?? "contain",
-            display: "block",
-            flexShrink: 0,
-          }}
-        />
-      </Stack>
-    </Box>
-  );
-
-  if (!item.clickable) {
-    return (
-      <Box
-        sx={{
-          width: "100%",
-          borderRadius: 6,
-          overflow: "hidden",
-          boxShadow: theme.custom.shadows.card,
-          bgcolor: theme.palette.common.white,
-        }}
-      >
-        {cardContent}
-      </Box>
-    );
-  }
 
   return (
-    <MuiLink
-      component={RouterLink}
-      to="/checkoutpopup"
-      underline="none"
-      color="inherit"
-      aria-label={`Buy gift card ${item.amount}`}
-      sx={{
-        width: "100%",
-        display: "block",
-        borderRadius: 6,
-        overflow: "hidden",
-        bgcolor: theme.palette.common.white,
-        border: item.outerBorder
-          ? `1px solid ${theme.palette.divider}`
-          : "none",
-        boxShadow: theme.custom.shadows.card,
-      }}
-    >
-      {cardContent}
-    </MuiLink>
+          <Card
+            key={`${card.amount}-${index}`}
+            elevation={0}
+            sx={(theme) => ({
+              flex: 1,
+              overflow: "hidden",
+              border: `1px solid ${theme.palette.divider}`,
+              boxShadow: "0px 20px 40px rgba(0, 0, 0, 0.15)",
+              bgcolor: theme.palette.background.paper,
+              '&:hover': {
+                    bgcolor: '#FAFBFA'
+                    // or use a specific hex code: backgroundColor: '#303f9f'
+                },
+            })}
+          >
+            <Link
+                aria-label="Close preregistration"
+                className="flex h-10 w-10 items-center justify-center"
+                to="/preregister"
+            >
+            <CardContent
+              sx={{
+                p: card.cardPadding,
+                "&:last-child": { pb: card.cardPadding },
+              }}
+            >
+              <Box
+                sx={{
+                  aspectRatio: "1.52",
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "space-between",
+                  width: "100%",
+                }}
+              >
+                <Stack
+                  direction="row"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Box
+                    component="img"
+                    src={card.brandImage}
+                    alt="Buyback logo"
+                    sx={{
+                      width: "63.22px",
+                      height: "44px",
+                      objectFit: "cover",
+                      flexShrink: 0,
+                    }}
+                  />
+                  <Typography
+                    component="p"
+                    variant="h1"
+                    sx={{
+                      color: theme.palette.text.primary,
+                      whiteSpace: "nowrap",
+                      fontSize: '70px',
+                    }}
+                  >
+                    {card.amount}
+                  </Typography>
+                </Stack>
+                <Stack
+                  direction="row"
+                  justifyContent="space-between"
+                  alignItems="center"
+                >
+                  <Stack spacing={0.25} justifyContent="center">
+                    <Typography
+                      component="p"
+                      variant="h4"
+                      sx={{
+                        color: theme.palette.buybak.greenPrimary,
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {card.reward}
+                    </Typography>
+                    <Typography
+                      component="p"
+                      variant="caption"
+                      sx={{
+                        color: theme.palette.text.secondary,
+                        whiteSpace: "nowrap",
+                      }}
+                    >
+                      {card.rewardLabel}
+                    </Typography>
+                  </Stack>
+                  <Box
+                    component="img"
+                    src={card.productImage}
+                    alt={card.productImageAlt}
+                    sx={{
+                      width: `${card.productImageWidth}px`,
+                      height: `${card.productImageHeight}px`,
+                      objectFit: card.productImageFit,
+                      flexShrink: 0,
+                    }}
+                  />
+                </Stack>
+              </Box>
+            </CardContent>
+            </Link>
+          </Card>
   );
 };
 
@@ -283,7 +283,7 @@ export const GiftCardGridSubsection = (): JSX.Element => {
       >
         {giftCards.map((item) => (
           <Grid
-            key={`${item.amount}-${item.reward}-${item.imageSrc}`}
+            key={`${item.amount}-${item.reward}-${item.productImage}`}
             size={{ xs: 12, md: 6, lg: 4 }}
           >
             <GiftCardTile item={item} />

@@ -1,0 +1,1 @@
+export { LegalNoticeSection } from "./LegalNoticeSection";

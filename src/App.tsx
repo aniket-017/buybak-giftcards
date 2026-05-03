@@ -7,6 +7,7 @@ import { CheckoutPopUpScreen } from "./screens/CheckoutPopUpScreen";
 import { CheckoutPopUpWrapper } from "./screens/CheckoutPopUpWrapper";
 import { ContactPopUp } from "./screens/ContactPopUp";
 import { GiftcardsWeb } from "./screens/GiftcardsWeb";
+import { GiftcardsTablet } from "./screens/GiftcardsTablet";
 import { PreRegisterPopUp } from "./screens/PreRegisterPopUp";
 import { PreRegisterSuccess } from "./screens/PreRegisterSuccess";
 
@@ -50,6 +51,10 @@ const router = createBrowserRouter([
   {
     path: "/giftcardsu47web",
     element: <GiftcardsWeb />,
+  },
+  {
+    path: "/giftcardstablet",
+    element: <GiftcardsTablet />,
   },
 ]);
 export const App = () => {

@@ -1,0 +1,1 @@
+export { RewardsComparisonSection } from "./RewardsComparisonSection";

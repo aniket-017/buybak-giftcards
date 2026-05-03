@@ -1,3 +1,4 @@
+import { Link, useLocation } from "react-router-dom";
 import { Box, Button, Stack, Typography } from "@mui/material";
 
 const actions = [
@@ -5,11 +6,13 @@ const actions = [
     label: "Browse Gift Cards",
     variant: "contained" as const,
     color: "primary" as const,
+    to: "/preregister"
   },
   {
     label: "Learn More",
     variant: "outlined" as const,
     color: "secondary" as const,
+    to: "/contactpopup"
   },
 ];
 
@@ -37,6 +40,7 @@ export const ClosingCallToActionSection = (): JSX.Element => {
             color: "buybak.blueDark",
             fontFamily: '"Source Serif 4", "Times New Roman", serif',
             fontWeight: 500,
+            fontSize: '40px',
           }}
         >
           Make your money work for you.
@@ -48,13 +52,25 @@ export const ClosingCallToActionSection = (): JSX.Element => {
           justifyContent="center"
         >
           {actions.map((action) => (
-            <Button
-              key={action.label}
-              variant={action.variant}
-              color={action.color}
-            >
-              {action.label}
-            </Button>
+                  <Link
+                    key={action.label}
+                    aria-current="page"
+                    className="inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2"
+                    to={action.to}
+                  >
+                      <Button
+                        key={action.label}
+                        variant={action.variant}
+                        color={action.color}
+                        sx={{
+                          minWidth: "auto",
+                          px: 8,
+                          py: 2,
+                        }}
+                      >
+                          {action.label}
+                      </Button>
+                  </Link>
           ))}
         </Stack>
       </Stack>

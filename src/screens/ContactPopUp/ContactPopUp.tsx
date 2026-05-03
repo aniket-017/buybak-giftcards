@@ -27,14 +27,14 @@ export const ContactPopUp = (): JSX.Element => {
   };
 
   return (
-    <Box
-      component="section"
-    >
+    <Box >
       <Stack
-		spacing={60}
+		spacing={2}
         sx={{
-          margin: 70, // Prevents default margin interference
-          width: "60%",
+          position: 'absolute', 
+          top: '-102px', 
+          margin: 0, // Prevents default margin interference
+          width: "80%",
           px: {
             xs: 0,
             sm: 6,
@@ -118,7 +118,7 @@ export const ContactPopUp = (): JSX.Element => {
                             />
                           </Link>
                     </Grid>
-                    <Grid item xs={12} padding={20} spacing={5}/>
+                    <Grid item xs={12} padding={5} spacing={5}/>
 
                             <Grid item xs={3} spacing={2} alignItems="center" />
                             <Grid item xs={6} alignItems="center">
@@ -218,7 +218,7 @@ export const ContactPopUp = (): JSX.Element => {
                                 />
                             </Grid>
                             <Grid item xs={3} alignItems="center"/>
-                            <Grid item padding={25} xs={12} />
+                            <Grid item padding={5} xs={12} />
                             <Grid item xs={4} alignItems="center"/>
                             <Grid item xs={8} spacing={2} alignItems="center">
                             <Link
@@ -240,7 +240,7 @@ export const ContactPopUp = (): JSX.Element => {
                             </Link>
                             </Grid>
                             <Grid item xs={2} alignItems="center"/>
-                            <Grid item xs={12} padding={2} spacing={5} alignItems="center"/>
+                            <Grid item xs={12} padding={1} spacing={5} alignItems="center"/>
                     </Grid>
                 </Stack>
               </Box>

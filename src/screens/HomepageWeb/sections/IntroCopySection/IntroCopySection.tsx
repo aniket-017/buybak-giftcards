@@ -1,19 +1,15 @@
 import { Grid, Stack, Typography } from "@mui/material";
 
 const headingParts = [
-  { text: "Same supplies. Same stores. ", color: "text.primary" },
-  { text: "Better ", color: "secondary.main" },
-  { text: "deal.", color: "buybak.blueDeep" },
+  { text: "Same supplies. Same stores. ", component: "div", color: "text.primary" },
+  { text: "Better ", component: "span", color: "secondary.main" },
+  { text: "Deal.", component: "span", color: "buybak.blueDeep" },
 ];
 
 const bodyParts = [
   {
-    text: "Quietly building a passive portfolio - ",
+    text: "Quietly building a passive portfolio",
     color: "buybak.neutralBody",
-  },
-  {
-    text: "rewards that grow with you",
-    color: "text.primary",
   },
   {
     text: ".",
@@ -43,10 +39,11 @@ export const IntroCopySection = (): JSX.Element => {
         {headingParts.map((part) => (
           <Typography
             key={part.text}
-            component="span"
+            component={part.component}
             variant="inherit"
             sx={{ 
                 color: part.color,
+                fontSize: '40px',
                 fontFamily: '"Source Serif 4", "Times New Roman", serif',
                 fontWeight: 500
             }}

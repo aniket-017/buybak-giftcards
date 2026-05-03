@@ -3,6 +3,7 @@ import {
   Box,
   Button,
   Divider,
+  Grid,
   Stack,
   Typography,
   useTheme,
@@ -13,6 +14,7 @@ import { ContentHeadingSection } from "./sections/ContentHeadingSection";
 import { FrequentlyAskedQuestionsSection } from "./sections/FrequentlyAskedQuestionsSection";
 import { GiftCardOfferingSection } from "./sections/GiftCardOfferingSection";
 import { GiftCardRewardsComparisonSection } from "./sections/GiftCardRewardsComparisonSection";
+import { RewardsComparisonSection } from "./sections/RewardsComparisonSection";
 import { HeadlineSection } from "./sections/HeadlineSection";
 import { HeroFeatureSection } from "./sections/HeroFeatureSection";
 import { IntroCopySection } from "./sections/IntroCopySection";
@@ -130,8 +132,14 @@ export const HomepageWeb = (): JSX.Element => {
           zIndex: 3,
         }}
       >
-        <IntroCopySection />
-        <GiftCardRewardsComparisonSection />
+        <Grid container spacing={0} padding={0} alignItems="top" direction="row" >
+            <Grid item xs={7.5} >
+                <IntroCopySection />
+            </Grid>
+            <Grid item xs={4.5} >
+                <RewardsComparisonSection />
+            </Grid>
+        </Grid>
       </Stack>
       <Stack
         component="section"
