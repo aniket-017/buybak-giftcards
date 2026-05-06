@@ -101,6 +101,12 @@
       "type": "component"
     },
     {
+      "id": "src/screens/GiftcardsTablet/sections/FooterInfoSection/FooterInfoSection.tsx",
+      "label": "FooterInfoSection",
+      "routes": [],
+      "type": "component"
+    },
+    {
       "id": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx",
       "label": "TopNavigationSection",
       "routes": [],
@@ -119,8 +125,20 @@
       "type": "component"
     },
     {
+      "id": "src/screens/HomepageWeb/sections/ClosingCallToActionSection/ClosingCallToActionSection.tsx",
+      "label": "ClosingCallToActionSection",
+      "routes": [],
+      "type": "component"
+    },
+    {
       "id": "src/screens/HomepageWeb/sections/GiftCardOfferingSection/GiftCardOfferingSection.tsx",
       "label": "GiftCardOfferingSection",
+      "routes": [],
+      "type": "component"
+    },
+    {
+      "id": "src/screens/HomepageWeb/sections/HeroFeatureSection/HeroFeatureSection.tsx",
+      "label": "HeroFeatureSection",
       "routes": [],
       "type": "component"
     },
@@ -133,466 +151,610 @@
   ],
   "edges": [
     {
-      "id": "src/screens/HomepageWeb/HomepageWeb.tsx:244:12-to-src/screens/ContactPopUp/ContactPopUp.tsx",
-      "source": "src/screens/HomepageWeb/HomepageWeb.tsx",
-      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
+      "id": "src\\screens\\HomepageWeb\\HomepageWeb.tsx:252:12-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
       "data": {
         "viaRoute": "/contactpopup",
         "trigger": {
-          "element": "<Link\n                key=\"contactus\"\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n                to=\"/contactpopup\"\n            >\n            <Button\n              variant=\"contained\"\n              color=\"secondary\"\n              sx={{\n                px: 5,\n                py: 1,\n                minWidth: \"auto\",\n                borderRadius: \"16777200px\",\n                bgcolor: buybak.greenAccent,\n                color: buybak.white,\n                \"&:hover\": {\n                  bgcolor: buybak.greenAccent,\n                  boxShadow: \"none\",\n                },\n              }}\n            >\n              Contact Us\n            </Button>\n            </Link>",
-          "line": 244,
-          "endLine": 267,
+          "element": "<Link\r\n                key=\"contactus\"\r\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                to=\"/contactpopup\"\r\n            >\r\n            <Button\r\n              variant=\"contained\"\r\n              color=\"secondary\"\r\n              sx={{\r\n                px: 5,\r\n                py: 1,\r\n                minWidth: \"auto\",\r\n                borderRadius: \"16777200px\",\r\n                bgcolor: buybak.greenAccent,\r\n                color: buybak.white,\r\n                \"&:hover\": {\r\n                  bgcolor: buybak.greenAccent,\r\n                  boxShadow: \"none\",\r\n                },\r\n              }}\r\n            >\r\n              Contact Us\r\n            </Button>\r\n            </Link>",
+          "line": 252,
+          "endLine": 275,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src/screens/HomepageWeb/HomepageWeb.tsx"
+          "sourceFile": "src\\screens\\HomepageWeb\\HomepageWeb.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:108:6-to-src/screens/ContactPopUp/ContactPopUp.tsx",
-      "source": "src/screens/HomepageWeb/HomepageWeb.tsx",
-      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:110:6-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
       "data": {
         "viaRoute": "/contactpopup",
         "trigger": {
-          "element": "<Link\n\t\t\t\t\tkey={item.label}\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n\t\t\t\t\tto={item.to}\n\t\t\t\t  >\n\n\t\t\t\t  <Button\n\t\t\t\t\tvariant=\"contained\"\n\t\t\t\t\tcolor=\"primary\"\n\t\t\t\t\thref=\"#pre-register\"\n\t\t\t\t\tsx={{\n\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t  px: 8,\n\t\t\t\t\t  py: 2,\n\t\t\t\t\t}}\n\t\t\t\t  >\n\t\t\t\t\t  {item.label}\n          \t\t  </Button>\n\t\t\t\t  </Link>",
-          "line": 108,
-          "endLine": 127,
+          "element": "<Link\r\n\t\t\t\t\tkey={item.label}\r\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\r\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n\t\t\t\t\tto={item.to}\r\n\t\t\t\t  >\r\n\r\n\t\t\t\t  <Button\r\n\t\t\t\t\tvariant=\"contained\"\r\n\t\t\t\t\tcolor=\"primary\"\r\n\t\t\t\t\thref=\"#pre-register\"\r\n\t\t\t\t\tsx={{\r\n\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t}}\r\n\t\t\t\t  >\r\n\t\t\t\t\t  {item.label}\r\n          \t\t  </Button>\r\n\t\t\t\t  </Link>",
+          "line": 110,
+          "endLine": 129,
           "column": 6,
           "endColumn": 13,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:108:6-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/HomepageWeb/HomepageWeb.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:110:6-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n\t\t\t\t\tkey={item.label}\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n\t\t\t\t\tto={item.to}\n\t\t\t\t  >\n\n\t\t\t\t  <Button\n\t\t\t\t\tvariant=\"contained\"\n\t\t\t\t\tcolor=\"primary\"\n\t\t\t\t\thref=\"#pre-register\"\n\t\t\t\t\tsx={{\n\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t  px: 8,\n\t\t\t\t\t  py: 2,\n\t\t\t\t\t}}\n\t\t\t\t  >\n\t\t\t\t\t  {item.label}\n          \t\t  </Button>\n\t\t\t\t  </Link>",
-          "line": 108,
-          "endLine": 127,
+          "element": "<Link\r\n\t\t\t\t\tkey={item.label}\r\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\r\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n\t\t\t\t\tto={item.to}\r\n\t\t\t\t  >\r\n\r\n\t\t\t\t  <Button\r\n\t\t\t\t\tvariant=\"contained\"\r\n\t\t\t\t\tcolor=\"primary\"\r\n\t\t\t\t\thref=\"#pre-register\"\r\n\t\t\t\t\tsx={{\r\n\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t}}\r\n\t\t\t\t  >\r\n\t\t\t\t\t  {item.label}\r\n          \t\t  </Button>\r\n\t\t\t\t  </Link>",
+          "line": 110,
+          "endLine": 129,
           "column": 6,
           "endColumn": 13,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:133:6-to-src/screens/ContactPopUp/ContactPopUp.tsx",
-      "source": "src/screens/HomepageWeb/HomepageWeb.tsx",
-      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:135:6-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
       "data": {
         "viaRoute": "/contactpopup",
         "trigger": {
-          "element": "<Link\n\t\t\t\t\tkey={item.label}\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\n\t\t\t\t\tto={item.to}\n\t\t\t\t  >\n\t\t\t\t\t  <Button\n\t\t\t\t\t\tvariant=\"outlined\"\n\t\t\t\t\t\tcolor=\"secondary\"\n\t\t\t\t\t\thref=\"#contact-us\"\n\t\t\t\t\t\tsx={{\n\t\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t\t  px: 8,\n\t\t\t\t\t\t  py: 2,\n\t\t\t\t\t\t}}\n\t\t\t\t\t  >\n\t\t\t\t\t  \t{item.label}\n\t\t\t\t\t  </Button>\n\t\t\t\t  </Link>",
-          "line": 133,
-          "endLine": 151,
+          "element": "<Link\r\n\t\t\t\t\tkey={item.label}\r\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\r\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\r\n\t\t\t\t\tto={item.to}\r\n\t\t\t\t  >\r\n\t\t\t\t\t  <Button\r\n\t\t\t\t\t\tvariant=\"outlined\"\r\n\t\t\t\t\t\tcolor=\"secondary\"\r\n\t\t\t\t\t\thref=\"#contact-us\"\r\n\t\t\t\t\t\tsx={{\r\n\t\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t\t}}\r\n\t\t\t\t\t  >\r\n\t\t\t\t\t  \t{item.label}\r\n\t\t\t\t\t  </Button>\r\n\t\t\t\t  </Link>",
+          "line": 135,
+          "endLine": 153,
           "column": 6,
           "endColumn": 13,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:133:6-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/HomepageWeb/HomepageWeb.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:135:6-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n\t\t\t\t\tkey={item.label}\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\n\t\t\t\t\tto={item.to}\n\t\t\t\t  >\n\t\t\t\t\t  <Button\n\t\t\t\t\t\tvariant=\"outlined\"\n\t\t\t\t\t\tcolor=\"secondary\"\n\t\t\t\t\t\thref=\"#contact-us\"\n\t\t\t\t\t\tsx={{\n\t\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t\t  px: 8,\n\t\t\t\t\t\t  py: 2,\n\t\t\t\t\t\t}}\n\t\t\t\t\t  >\n\t\t\t\t\t  \t{item.label}\n\t\t\t\t\t  </Button>\n\t\t\t\t  </Link>",
-          "line": 133,
-          "endLine": 151,
+          "element": "<Link\r\n\t\t\t\t\tkey={item.label}\r\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\r\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\r\n\t\t\t\t\tto={item.to}\r\n\t\t\t\t  >\r\n\t\t\t\t\t  <Button\r\n\t\t\t\t\t\tvariant=\"outlined\"\r\n\t\t\t\t\t\tcolor=\"secondary\"\r\n\t\t\t\t\t\thref=\"#contact-us\"\r\n\t\t\t\t\t\tsx={{\r\n\t\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t\t}}\r\n\t\t\t\t\t  >\r\n\t\t\t\t\t  \t{item.label}\r\n\t\t\t\t\t  </Button>\r\n\t\t\t\t  </Link>",
+          "line": 135,
+          "endLine": 153,
           "column": 6,
           "endColumn": 13,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:156:4-to-src/screens/ContactPopUp/ContactPopUp.tsx",
-      "source": "src/screens/HomepageWeb/HomepageWeb.tsx",
-      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:159:12-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
       "data": {
         "viaRoute": "/contactpopup",
         "trigger": {
-          "element": "<Link\n\t\t\t\t  key={item.label}\n\t\t\t\t  aria-current={isActive ? \"page\" : undefined}\n\t\t\t\t  className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\n\t\t\t\t  to={item.to}\n\t\t\t\t>\n\t\t\t\t  <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\n\t\t\t\t\t{item.label}\n\t\t\t\t  </span>\n\t\t\t\t</Link>",
-          "line": 156,
-          "endLine": 165,
-          "column": 4,
-          "endColumn": 11,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "element": "<Link\r\n              key={item.label}\r\n              aria-current={isActive ? \"page\" : undefined}\r\n              className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\r\n              to={item.to}\r\n            >\r\n              <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\r\n                {item.label}\r\n              </span>\r\n            </Link>",
+          "line": 159,
+          "endLine": 168,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:156:4-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/HomepageWeb/HomepageWeb.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:159:12-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n\t\t\t\t  key={item.label}\n\t\t\t\t  aria-current={isActive ? \"page\" : undefined}\n\t\t\t\t  className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\n\t\t\t\t  to={item.to}\n\t\t\t\t>\n\t\t\t\t  <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\n\t\t\t\t\t{item.label}\n\t\t\t\t  </span>\n\t\t\t\t</Link>",
-          "line": 156,
-          "endLine": 165,
-          "column": 4,
-          "endColumn": 11,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "element": "<Link\r\n              key={item.label}\r\n              aria-current={isActive ? \"page\" : undefined}\r\n              className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\r\n              to={item.to}\r\n            >\r\n              <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\r\n                {item.label}\r\n              </span>\r\n            </Link>",
+          "line": 159,
+          "endLine": 168,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/GiftCardOfferingSection/GiftCardOfferingSection.tsx:87:12-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/HomepageWeb/HomepageWeb.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx:86:18-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n                aria-label=\"Close preregistration\"\n                className=\"flex h-10 w-10 items-center justify-center\"\n                to=\"/preregister\"\n            >\n            <CardContent\n              sx={{\n                p: card.cardPadding,\n                \"&:last-child\": { pb: card.cardPadding },\n              }}\n            >\n              <Box\n                sx={{\n                  aspectRatio: \"1.52\",\n                  display: \"flex\",\n                  flexDirection: \"column\",\n                  justifyContent: \"space-between\",\n                  width: \"100%\",\n                }}\n              >\n                <Stack\n                  direction=\"row\"\n                  justifyContent=\"space-between\"\n                  alignItems=\"center\"\n                >\n                  <Box\n                    component=\"img\"\n                    src={card.brandImage}\n                    alt=\"Buyback logo\"\n                    sx={{\n                      width: \"63.22px\",\n                      height: \"44px\",\n                      objectFit: \"cover\",\n                      flexShrink: 0,\n                    }}\n                  />\n                  <Typography\n                    component=\"p\"\n                    variant=\"h1\"\n                    sx={{\n                      color: theme.palette.text.primary,\n                      whiteSpace: \"nowrap\",\n                      fontSize: '70px',\n                    }}\n                  >\n                    {card.amount}\n                  </Typography>\n                </Stack>\n                <Stack\n                  direction=\"row\"\n                  justifyContent=\"space-between\"\n                  alignItems=\"center\"\n                >\n                  <Stack spacing={0.25} justifyContent=\"center\">\n                    <Typography\n                      component=\"p\"\n                      variant=\"h4\"\n                      sx={{\n                        color: theme.palette.buybak.greenPrimary,\n                        whiteSpace: \"nowrap\",\n                      }}\n                    >\n                      {card.reward}\n                    </Typography>\n                    <Typography\n                      component=\"p\"\n                      variant=\"caption\"\n                      sx={{\n                        color: theme.palette.text.secondary,\n                        whiteSpace: \"nowrap\",\n                      }}\n                    >\n                      {card.rewardLabel}\n                    </Typography>\n                  </Stack>\n                  <Box\n                    component=\"img\"\n                    src={card.productImage}\n                    alt={card.productImageAlt}\n                    sx={{\n                      width: `${card.productImageWidth}px`,\n                      height: `${card.productImageHeight}px`,\n                      objectFit: card.productImageFit,\n                      flexShrink: 0,\n                    }}\n                  />\n                </Stack>\n              </Box>\n            </CardContent>\n            </Link>",
+          "element": "<Link\r\n                    key={action.label}\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to={action.to}\r\n                  >\r\n                      <Button\r\n                        key={action.label}\r\n                        variant={action.variant}\r\n                        color={action.color}\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                          {action.label}\r\n                      </Button>\r\n                  </Link>",
+          "line": 86,
+          "endLine": 104,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx:86:18-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "data": {
+        "viaRoute": "/contactpopup",
+        "trigger": {
+          "element": "<Link\r\n                    key={action.label}\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to={action.to}\r\n                  >\r\n                      <Button\r\n                        key={action.label}\r\n                        variant={action.variant}\r\n                        color={action.color}\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                          {action.label}\r\n                      </Button>\r\n                  </Link>",
+          "line": 86,
+          "endLine": 104,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\GiftCardOfferingSection\\GiftCardOfferingSection.tsx:87:12-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
+      "data": {
+        "viaRoute": "/preregister",
+        "trigger": {
+          "element": "<Link\r\n                aria-label=\"Close preregistration\"\r\n                className=\"flex h-10 w-10 items-center justify-center\"\r\n                to=\"/preregister\"\r\n            >\r\n            <CardContent\r\n              sx={{\r\n                p: card.cardPadding,\r\n                \"&:last-child\": { pb: card.cardPadding },\r\n              }}\r\n            >\r\n              <Box\r\n                sx={{\r\n                  aspectRatio: \"1.52\",\r\n                  display: \"flex\",\r\n                  flexDirection: \"column\",\r\n                  justifyContent: \"space-between\",\r\n                  width: \"100%\",\r\n                }}\r\n              >\r\n                <Stack\r\n                  direction=\"row\"\r\n                  justifyContent=\"space-between\"\r\n                  alignItems=\"center\"\r\n                >\r\n                  <Box\r\n                    component=\"img\"\r\n                    src={card.brandImage}\r\n                    alt=\"Buyback logo\"\r\n                    sx={{\r\n                      width: \"63.22px\",\r\n                      height: \"44px\",\r\n                      objectFit: \"cover\",\r\n                      flexShrink: 0,\r\n                    }}\r\n                  />\r\n                  <Typography\r\n                    component=\"p\"\r\n                    variant=\"h1\"\r\n                    sx={{\r\n                      color: theme.palette.text.primary,\r\n                      whiteSpace: \"nowrap\",\r\n                      fontSize: '70px',\r\n                    }}\r\n                  >\r\n                    {card.amount}\r\n                  </Typography>\r\n                </Stack>\r\n                <Stack\r\n                  direction=\"row\"\r\n                  justifyContent=\"space-between\"\r\n                  alignItems=\"center\"\r\n                >\r\n                  <Stack spacing={0.25} justifyContent=\"center\">\r\n                    <Typography\r\n                      component=\"p\"\r\n                      variant=\"h4\"\r\n                      sx={{\r\n                        color: theme.palette.buybak.greenPrimary,\r\n                        whiteSpace: \"nowrap\",\r\n                      }}\r\n                    >\r\n                      {card.reward}\r\n                    </Typography>\r\n                    <Typography\r\n                      component=\"p\"\r\n                      variant=\"caption\"\r\n                      sx={{\r\n                        color: theme.palette.text.secondary,\r\n                        whiteSpace: \"nowrap\",\r\n                      }}\r\n                    >\r\n                      {card.rewardLabel}\r\n                    </Typography>\r\n                  </Stack>\r\n                  <Box\r\n                    component=\"img\"\r\n                    src={card.productImage}\r\n                    alt={card.productImageAlt}\r\n                    sx={{\r\n                      width: `${card.productImageWidth}px`,\r\n                      height: `${card.productImageHeight}px`,\r\n                      objectFit: card.productImageFit,\r\n                      flexShrink: 0,\r\n                    }}\r\n                  />\r\n                </Stack>\r\n              </Box>\r\n            </CardContent>\r\n            </Link>",
           "line": 87,
           "endLine": 176,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src/screens/HomepageWeb/sections/GiftCardOfferingSection/GiftCardOfferingSection.tsx"
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\GiftCardOfferingSection\\GiftCardOfferingSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/CheckoutPopUp/CheckoutPopUp.tsx:187:8-to-src/screens/CheckoutPopUpScreen/CheckoutPopUpScreen.tsx",
-      "source": "src/screens/CheckoutPopUp/CheckoutPopUp.tsx",
-      "target": "src/screens/CheckoutPopUpScreen/CheckoutPopUpScreen.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx:55:18-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
+      "data": {
+        "viaRoute": "/preregister",
+        "trigger": {
+          "element": "<Link\r\n                    key={action.label}\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to={action.to}\r\n                  >\r\n                      <Button\r\n                        key={action.label}\r\n                        variant={action.variant}\r\n                        color={action.color}\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                          {action.label}\r\n                      </Button>\r\n                  </Link>",
+          "line": 55,
+          "endLine": 73,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx:55:18-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\HomepageWeb.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "data": {
+        "viaRoute": "/contactpopup",
+        "trigger": {
+          "element": "<Link\r\n                    key={action.label}\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to={action.to}\r\n                  >\r\n                      <Button\r\n                        key={action.label}\r\n                        variant={action.variant}\r\n                        color={action.color}\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                          {action.label}\r\n                      </Button>\r\n                  </Link>",
+          "line": 55,
+          "endLine": 73,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\CheckoutPopUp\\CheckoutPopUp.tsx:187:8-to-src\\screens\\CheckoutPopUpScreen\\CheckoutPopUpScreen.tsx",
+      "source": "src\\screens\\CheckoutPopUp\\CheckoutPopUp.tsx",
+      "target": "src\\screens\\CheckoutPopUpScreen\\CheckoutPopUpScreen.tsx",
       "data": {
         "viaRoute": "/checkoutpopup3",
         "trigger": {
-          "element": "<Button\n          component={RouterLink}\n          to=\"/checkoutpopup3\"\n          fullWidth\n          variant=\"contained\"\n          color=\"primary\"\n          sx={{\n            minHeight: 54,\n            borderRadius: \"100px\",\n          }}\n        >\n          Confirm and Pay $1000\n        </Button>",
+          "element": "<Button\r\n          component={RouterLink}\r\n          to=\"/checkoutpopup3\"\r\n          fullWidth\r\n          variant=\"contained\"\r\n          color=\"primary\"\r\n          sx={{\r\n            minHeight: 54,\r\n            borderRadius: \"100px\",\r\n          }}\r\n        >\r\n          Confirm and Pay $1000\r\n        </Button>",
           "line": 187,
           "endLine": 199,
           "column": 8,
           "endColumn": 17,
-          "sourceFile": "src/screens/CheckoutPopUp/CheckoutPopUp.tsx"
+          "sourceFile": "src\\screens\\CheckoutPopUp\\CheckoutPopUp.tsx"
         }
       }
     },
     {
-      "id": "src/screens/CheckoutPopUp/CheckoutPopUp.tsx:200:8-to-src/screens/CheckoutPopUpWrapper/CheckoutPopUpWrapper.tsx",
-      "source": "src/screens/CheckoutPopUp/CheckoutPopUp.tsx",
-      "target": "src/screens/CheckoutPopUpWrapper/CheckoutPopUpWrapper.tsx",
+      "id": "src\\screens\\CheckoutPopUp\\CheckoutPopUp.tsx:200:8-to-src\\screens\\CheckoutPopUpWrapper\\CheckoutPopUpWrapper.tsx",
+      "source": "src\\screens\\CheckoutPopUp\\CheckoutPopUp.tsx",
+      "target": "src\\screens\\CheckoutPopUpWrapper\\CheckoutPopUpWrapper.tsx",
       "data": {
         "viaRoute": "/checkoutpopup",
         "trigger": {
-          "element": "<Link\n          component={RouterLink}\n          to=\"/checkoutpopup\"\n          underline=\"none\"\n          sx={(theme) => ({\n            alignSelf: \"center\",\n            ...theme.typography.subtitle1,\n            color: theme.palette.primary.main,\n          })}\n        >\n          GO BACK\n        </Link>",
+          "element": "<Link\r\n          component={RouterLink}\r\n          to=\"/checkoutpopup\"\r\n          underline=\"none\"\r\n          sx={(theme) => ({\r\n            alignSelf: \"center\",\r\n            ...theme.typography.subtitle1,\r\n            color: theme.palette.primary.main,\r\n          })}\r\n        >\r\n          GO BACK\r\n        </Link>",
           "line": 200,
           "endLine": 211,
           "column": 8,
           "endColumn": 15,
-          "sourceFile": "src/screens/CheckoutPopUp/CheckoutPopUp.tsx"
+          "sourceFile": "src\\screens\\CheckoutPopUp\\CheckoutPopUp.tsx"
         }
       }
     },
     {
-      "id": "src/screens/CheckoutPopUpScreen/CheckoutPopUpScreen.tsx:112:8-to-src/screens/GiftcardsWeb/GiftcardsWeb.tsx",
-      "source": "src/screens/CheckoutPopUpScreen/CheckoutPopUpScreen.tsx",
-      "target": "src/screens/GiftcardsWeb/GiftcardsWeb.tsx",
+      "id": "src\\screens\\CheckoutPopUpScreen\\CheckoutPopUpScreen.tsx:112:8-to-src\\screens\\GiftcardsWeb\\GiftcardsWeb.tsx",
+      "source": "src\\screens\\CheckoutPopUpScreen\\CheckoutPopUpScreen.tsx",
+      "target": "src\\screens\\GiftcardsWeb\\GiftcardsWeb.tsx",
       "data": {
         "viaRoute": "/giftcardsu47web",
         "trigger": {
-          "element": "<Button\n          component={RouterLink}\n          to=\"/giftcardsu47web\"\n          variant=\"contained\"\n          color=\"primary\"\n          fullWidth\n          sx={{\n            minHeight: 53,\n            borderRadius: \"100px\",\n            px: 10,\n            py: 2.5,\n          }}\n        >\n          Continue Browsing\n        </Button>",
+          "element": "<Button\r\n          component={RouterLink}\r\n          to=\"/giftcardsu47web\"\r\n          variant=\"contained\"\r\n          color=\"primary\"\r\n          fullWidth\r\n          sx={{\r\n            minHeight: 53,\r\n            borderRadius: \"100px\",\r\n            px: 10,\r\n            py: 2.5,\r\n          }}\r\n        >\r\n          Continue Browsing\r\n        </Button>",
           "line": 112,
           "endLine": 126,
           "column": 8,
           "endColumn": 17,
-          "sourceFile": "src/screens/CheckoutPopUpScreen/CheckoutPopUpScreen.tsx"
+          "sourceFile": "src\\screens\\CheckoutPopUpScreen\\CheckoutPopUpScreen.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx:42:14-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx:42:14-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n                key={item.label}\n                aria-current={isActive ? \"page\" : undefined}\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n                to={item.to}\n              >\n                <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutralsffffff [font-style:var(--web-body-font-style)]\">\n                  {item.label}\n                </span>\n              </Link>",
+          "element": "<Link\r\n                key={item.label}\r\n                aria-current={isActive ? \"page\" : undefined}\r\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                to={item.to}\r\n              >\r\n                <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutralsffffff [font-style:var(--web-body-font-style)]\">\r\n                  {item.label}\r\n                </span>\r\n              </Link>",
           "line": 42,
           "endLine": 51,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx"
+          "sourceFile": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx:57:14-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx:57:14-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n                key={item.label}\n                aria-current={isActive ? \"page\" : undefined}\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\n                to={item.to}\n              >\n                <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-greens-2d-6a-4f [font-style:var(--web-body-font-style)]\">\n                  {item.label}\n                </span>\n              </Link>",
+          "element": "<Link\r\n                key={item.label}\r\n                aria-current={isActive ? \"page\" : undefined}\r\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\r\n                to={item.to}\r\n              >\r\n                <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-greens-2d-6a-4f [font-style:var(--web-body-font-style)]\">\r\n                  {item.label}\r\n                </span>\r\n              </Link>",
           "line": 57,
           "endLine": 66,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx"
+          "sourceFile": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx:71:12-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx:71:12-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n              key={item.label}\n              aria-current={isActive ? \"page\" : undefined}\n              className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\n              to={item.to}\n            >\n              <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\n                {item.label}\n              </span>\n            </Link>",
+          "element": "<Link\r\n              key={item.label}\r\n              aria-current={isActive ? \"page\" : undefined}\r\n              className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\r\n              to={item.to}\r\n            >\r\n              <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\r\n                {item.label}\r\n              </span>\r\n            </Link>",
           "line": 71,
           "endLine": 80,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx"
+          "sourceFile": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/CheckoutPopUpWrapper/sections/GiftCardInfoSubsection/GiftCardInfoSubsection.tsx:22:6-to-src/screens/CheckoutPopUpWrapper/CheckoutPopUpWrapper.tsx",
-      "source": "src/screens/CheckoutPopUpWrapper/sections/GiftCardInfoSubsection/GiftCardInfoSubsection.tsx",
-      "target": "src/screens/CheckoutPopUpWrapper/CheckoutPopUpWrapper.tsx",
+      "id": "src\\screens\\CheckoutPopUpWrapper\\sections\\GiftCardInfoSubsection\\GiftCardInfoSubsection.tsx:22:6-to-src\\screens\\CheckoutPopUpWrapper\\CheckoutPopUpWrapper.tsx",
+      "source": "src\\screens\\CheckoutPopUpWrapper\\sections\\GiftCardInfoSubsection\\GiftCardInfoSubsection.tsx",
+      "target": "src\\screens\\CheckoutPopUpWrapper\\CheckoutPopUpWrapper.tsx",
       "data": {
         "viaRoute": "/checkoutpopup",
         "trigger": {
-          "element": "<Link\n        component={RouterLink}\n        to=\"/checkoutpopup\"\n        underline=\"none\"\n        color=\"inherit\"\n        sx={{\n          display: \"flex\",\n          flex: 1,\n          minWidth: 0,\n          maxWidth: { xs: \"100%\", md: 470 },\n          borderRadius: 6,\n        }}\n        aria-label=\"$1000 gift card details\"\n      >\n        <Box\n          component=\"article\"\n          sx={{\n            display: \"flex\",\n            flexDirection: \"column\",\n            justifyContent: \"space-between\",\n            p: 4,\n            width: \"100%\",\n            bgcolor: theme.palette.common.white,\n            border: `1px solid ${theme.palette.divider}`,\n            borderRadius: 6,\n            boxShadow: \"0px 20px 40px rgba(0, 0, 0, 0.15)\",\n            aspectRatio: \"1.52 / 1\",\n          }}\n        >\n          <Stack\n            direction=\"row\"\n            justifyContent=\"space-between\"\n            alignItems=\"center\"\n          >\n            <Box\n              component=\"img\"\n              src=\"/img/image-buybak-14.png\"\n              alt=\"BuyBack logo\"\n              sx={{\n                width: 63.22,\n                height: 44,\n                objectFit: \"cover\",\n                flexShrink: 0,\n              }}\n            />\n            <Typography\n              component=\"p\"\n              sx={{\n                fontFamily: '\"Figtree\", Helvetica, Arial, sans-serif',\n                fontWeight: 600,\n                fontSize: 45,\n                lineHeight: \"normal\",\n                letterSpacing: 0,\n                color: theme.palette.text.primary,\n                whiteSpace: \"nowrap\",\n              }}\n            >\n              $1000\n            </Typography>\n          </Stack>\n          <Stack\n            direction=\"row\"\n            justifyContent=\"space-between\"\n            alignItems=\"center\"\n          >\n            <Stack spacing={0.5}>\n              <Typography\n                component=\"p\"\n                sx={{\n                  ...theme.typography.h4,\n                  color: theme.palette.success.main,\n                  whiteSpace: \"nowrap\",\n                }}\n              >\n                4.9%\n              </Typography>\n              <Typography\n                component=\"p\"\n                sx={{\n                  fontFamily: '\"Figtree\", Helvetica, Arial, sans-serif',\n                  fontWeight: 600,\n                  fontSize: 16,\n                  lineHeight: \"normal\",\n                  letterSpacing: 0,\n                  color: theme.palette.text.secondary,\n                  whiteSpace: \"nowrap\",\n                }}\n              >\n                STOCK REWARDS\n              </Typography>\n            </Stack>\n            <Box\n              component=\"img\"\n              src=\"/img/image-1-3.png\"\n              alt=\"Lowe's gift card\"\n              sx={{\n                width: 127,\n                height: 60,\n                objectFit: \"cover\",\n                flexShrink: 0,\n              }}\n            />\n          </Stack>\n        </Box>\n      </Link>",
+          "element": "<Link\r\n        component={RouterLink}\r\n        to=\"/checkoutpopup\"\r\n        underline=\"none\"\r\n        color=\"inherit\"\r\n        sx={{\r\n          display: \"flex\",\r\n          flex: 1,\r\n          minWidth: 0,\r\n          maxWidth: { xs: \"100%\", md: 470 },\r\n          borderRadius: 6,\r\n        }}\r\n        aria-label=\"$1000 gift card details\"\r\n      >\r\n        <Box\r\n          component=\"article\"\r\n          sx={{\r\n            display: \"flex\",\r\n            flexDirection: \"column\",\r\n            justifyContent: \"space-between\",\r\n            p: 4,\r\n            width: \"100%\",\r\n            bgcolor: theme.palette.common.white,\r\n            border: `1px solid ${theme.palette.divider}`,\r\n            borderRadius: 6,\r\n            boxShadow: \"0px 20px 40px rgba(0, 0, 0, 0.15)\",\r\n            aspectRatio: \"1.52 / 1\",\r\n          }}\r\n        >\r\n          <Stack\r\n            direction=\"row\"\r\n            justifyContent=\"space-between\"\r\n            alignItems=\"center\"\r\n          >\r\n            <Box\r\n              component=\"img\"\r\n              src=\"/img/image-buybak-14.png\"\r\n              alt=\"BuyBack logo\"\r\n              sx={{\r\n                width: 63.22,\r\n                height: 44,\r\n                objectFit: \"cover\",\r\n                flexShrink: 0,\r\n              }}\r\n            />\r\n            <Typography\r\n              component=\"p\"\r\n              sx={{\r\n                fontFamily: '\"Figtree\", Helvetica, Arial, sans-serif',\r\n                fontWeight: 600,\r\n                fontSize: 45,\r\n                lineHeight: \"normal\",\r\n                letterSpacing: 0,\r\n                color: theme.palette.text.primary,\r\n                whiteSpace: \"nowrap\",\r\n              }}\r\n            >\r\n              $1000\r\n            </Typography>\r\n          </Stack>\r\n          <Stack\r\n            direction=\"row\"\r\n            justifyContent=\"space-between\"\r\n            alignItems=\"center\"\r\n          >\r\n            <Stack spacing={0.5}>\r\n              <Typography\r\n                component=\"p\"\r\n                sx={{\r\n                  ...theme.typography.h4,\r\n                  color: theme.palette.success.main,\r\n                  whiteSpace: \"nowrap\",\r\n                }}\r\n              >\r\n                4.9%\r\n              </Typography>\r\n              <Typography\r\n                component=\"p\"\r\n                sx={{\r\n                  fontFamily: '\"Figtree\", Helvetica, Arial, sans-serif',\r\n                  fontWeight: 600,\r\n                  fontSize: 16,\r\n                  lineHeight: \"normal\",\r\n                  letterSpacing: 0,\r\n                  color: theme.palette.text.secondary,\r\n                  whiteSpace: \"nowrap\",\r\n                }}\r\n              >\r\n                STOCK REWARDS\r\n              </Typography>\r\n            </Stack>\r\n            <Box\r\n              component=\"img\"\r\n              src=\"/img/image-1-3.png\"\r\n              alt=\"Lowe's gift card\"\r\n              sx={{\r\n                width: 127,\r\n                height: 60,\r\n                objectFit: \"cover\",\r\n                flexShrink: 0,\r\n              }}\r\n            />\r\n          </Stack>\r\n        </Box>\r\n      </Link>",
           "line": 22,
           "endLine": 126,
           "column": 6,
           "endColumn": 13,
-          "sourceFile": "src/screens/CheckoutPopUpWrapper/sections/GiftCardInfoSubsection/GiftCardInfoSubsection.tsx"
+          "sourceFile": "src\\screens\\CheckoutPopUpWrapper\\sections\\GiftCardInfoSubsection\\GiftCardInfoSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx:42:14-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx:42:14-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n                key={item.label}\n                aria-current={isActive ? \"page\" : undefined}\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n                to={item.to}\n              >\n                <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutralsffffff [font-style:var(--web-body-font-style)]\">\n                  {item.label}\n                </span>\n              </Link>",
+          "element": "<Link\r\n                key={item.label}\r\n                aria-current={isActive ? \"page\" : undefined}\r\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                to={item.to}\r\n              >\r\n                <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutralsffffff [font-style:var(--web-body-font-style)]\">\r\n                  {item.label}\r\n                </span>\r\n              </Link>",
           "line": 42,
           "endLine": 51,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx"
+          "sourceFile": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx:57:14-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx:57:14-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n                key={item.label}\n                aria-current={isActive ? \"page\" : undefined}\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\n                to={item.to}\n              >\n                <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-greens-2d-6a-4f [font-style:var(--web-body-font-style)]\">\n                  {item.label}\n                </span>\n              </Link>",
+          "element": "<Link\r\n                key={item.label}\r\n                aria-current={isActive ? \"page\" : undefined}\r\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\r\n                to={item.to}\r\n              >\r\n                <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-greens-2d-6a-4f [font-style:var(--web-body-font-style)]\">\r\n                  {item.label}\r\n                </span>\r\n              </Link>",
           "line": 57,
           "endLine": 66,
           "column": 14,
           "endColumn": 21,
-          "sourceFile": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx"
+          "sourceFile": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx:71:12-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx:71:12-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n              key={item.label}\n              aria-current={isActive ? \"page\" : undefined}\n              className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\n              to={item.to}\n            >\n              <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\n                {item.label}\n              </span>\n            </Link>",
+          "element": "<Link\r\n              key={item.label}\r\n              aria-current={isActive ? \"page\" : undefined}\r\n              className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\r\n              to={item.to}\r\n            >\r\n              <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\r\n                {item.label}\r\n              </span>\r\n            </Link>",
           "line": 71,
           "endLine": 80,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src/screens/GiftCards/sections/HeaderWrapperSubsection/HeaderWrapperSubsection.tsx"
+          "sourceFile": "src\\screens\\GiftCards\\sections\\HeaderWrapperSubsection\\HeaderWrapperSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx:88:18-to-src/screens/ContactPopUp/ContactPopUp.tsx",
-      "source": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx",
-      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
+      "id": "src\\screens\\GiftcardsTablet\\sections\\FooterInfoSection\\FooterInfoSection.tsx:97:12-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\GiftcardsTablet\\sections\\FooterInfoSection\\FooterInfoSection.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
       "data": {
         "viaRoute": "/contactpopup",
         "trigger": {
-          "element": "<Link\n                    key=\"Pre-register\"\n                    aria-current=\"page\"\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n                    to=\"/contactpopup\"\n                  >\n\t\t\t\t\t  <Button\n\t\t\t\t\t\tvariant=\"outlinedd\"\n\t\t\t\t\t\tcolor=\"secondary\"\n\t\t\t\t\t\thref=\"#contactpopup\"\n\t\t\t\t\t\tsx={{\n\t\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t\t  px: 8,\n\t\t\t\t\t\t  py: 2,\n\t\t\t\t\t\t}}\n\t\t\t\t\t  >\n\t\t\t\t\t\t  Contact us\n\t\t\t\t\t  </Button>\n                  </Link>",
+          "element": "<Link\r\n                key=\"contactus\"\r\n                className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                to=\"/contactpopup\"\r\n            >\r\n            <Button\r\n              variant=\"contained\"\r\n              color=\"secondary\"\r\n              sx={{\r\n                px: 5,\r\n                py: 1,\r\n                minWidth: \"auto\",\r\n                borderRadius: \"16777200px\",\r\n                bgcolor: buybak.greenAccent,\r\n                color: buybak.white,\r\n                \"&:hover\": {\r\n                  bgcolor: buybak.greenAccent,\r\n                  boxShadow: \"none\",\r\n                },\r\n              }}\r\n            >\r\n              Contact Us\r\n            </Button>\r\n            </Link>",
+          "line": 97,
+          "endLine": 120,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\GiftcardsTablet\\sections\\FooterInfoSection\\FooterInfoSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\GiftcardsTablet\\sections\\TopNavigationSection\\TopNavigationSection.tsx:88:18-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\GiftcardsTablet\\sections\\TopNavigationSection\\TopNavigationSection.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "data": {
+        "viaRoute": "/contactpopup",
+        "trigger": {
+          "element": "<Link\r\n                    key=\"Contactpopup\"\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\r\n                    to=\"/contactpopup\"\r\n                  >\r\n                      <Button\r\n                        variant=\"outlined\"\r\n                        color=\"secondary\"\r\n                        href=\"#contact-us\"\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                        Contact Us\r\n                      </Button>\r\n                  </Link>",
           "line": 88,
           "endLine": 106,
           "column": 18,
           "endColumn": 25,
-          "sourceFile": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx"
+          "sourceFile": "src\\screens\\GiftcardsTablet\\sections\\TopNavigationSection\\TopNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx:108:18-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\GiftcardsTablet\\sections\\TopNavigationSection\\TopNavigationSection.tsx:108:18-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\GiftcardsTablet\\sections\\TopNavigationSection\\TopNavigationSection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n                    key=\"Pre-register\"\n                    aria-current=\"page\"\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n                    to=\"/preregister\"\n                  >\n\t\t\t\t\t  <Button\n\t\t\t\t\t\tvariant=\"contained\"\n\t\t\t\t\t\tcolor=\"primary\"\n\t\t\t\t\t\thref=\"#pre-register\"\n\t\t\t\t\t\tsx={{\n\t\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t\t  px: 8,\n\t\t\t\t\t\t  py: 2,\n\t\t\t\t\t\t}}\n\t\t\t\t\t  >\n\t\t\t\t\t\t  Pre-register\n\t\t\t\t\t  </Button>\n                  </Link>",
+          "element": "<Link\r\n                    key=\"Pre-register\"\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to=\"/preregister\"\r\n                  >\r\n\t\t\t\t\t  <Button\r\n\t\t\t\t\t\tvariant=\"contained\"\r\n\t\t\t\t\t\tcolor=\"primary\"\r\n\t\t\t\t\t\thref=\"#pre-register\"\r\n\t\t\t\t\t\tsx={{\r\n\t\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t\t}}\r\n\t\t\t\t\t  >\r\n\t\t\t\t\t\t  Pre-register\r\n\t\t\t\t\t  </Button>\r\n                  </Link>",
           "line": 108,
           "endLine": 126,
           "column": 18,
           "endColumn": 25,
-          "sourceFile": "src/screens/GiftcardsTablet/sections/TopNavigationSection/TopNavigationSection.tsx"
+          "sourceFile": "src\\screens\\GiftcardsTablet\\sections\\TopNavigationSection\\TopNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/GiftcardsWeb/sections/GiftCardGridSubsection/GiftCardGridSubsection.tsx:166:12-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/GiftcardsWeb/sections/GiftCardGridSubsection/GiftCardGridSubsection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\GiftcardsWeb\\sections\\GiftCardGridSubsection\\GiftCardGridSubsection.tsx:166:12-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\GiftcardsWeb\\sections\\GiftCardGridSubsection\\GiftCardGridSubsection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n                aria-label=\"Close preregistration\"\n                className=\"flex h-10 w-10 items-center justify-center\"\n                to=\"/preregister\"\n            >\n            <CardContent\n              sx={{\n                p: card.cardPadding,\n                \"&:last-child\": { pb: card.cardPadding },\n              }}\n            >\n              <Box\n                sx={{\n                  aspectRatio: \"1.52\",\n                  display: \"flex\",\n                  flexDirection: \"column\",\n                  justifyContent: \"space-between\",\n                  width: \"100%\",\n                }}\n              >\n                <Stack\n                  direction=\"row\"\n                  justifyContent=\"space-between\"\n                  alignItems=\"center\"\n                >\n                  <Box\n                    component=\"img\"\n                    src={card.brandImage}\n                    alt=\"Buyback logo\"\n                    sx={{\n                      width: \"63.22px\",\n                      height: \"44px\",\n                      objectFit: \"cover\",\n                      flexShrink: 0,\n                    }}\n                  />\n                  <Typography\n                    component=\"p\"\n                    variant=\"h1\"\n                    sx={{\n                      color: theme.palette.text.primary,\n                      whiteSpace: \"nowrap\",\n                      fontSize: '70px',\n                    }}\n                  >\n                    {card.amount}\n                  </Typography>\n                </Stack>\n                <Stack\n                  direction=\"row\"\n                  justifyContent=\"space-between\"\n                  alignItems=\"center\"\n                >\n                  <Stack spacing={0.25} justifyContent=\"center\">\n                    <Typography\n                      component=\"p\"\n                      variant=\"h4\"\n                      sx={{\n                        color: theme.palette.buybak.greenPrimary,\n                        whiteSpace: \"nowrap\",\n                      }}\n                    >\n                      {card.reward}\n                    </Typography>\n                    <Typography\n                      component=\"p\"\n                      variant=\"caption\"\n                      sx={{\n                        color: theme.palette.text.secondary,\n                        whiteSpace: \"nowrap\",\n                      }}\n                    >\n                      {card.rewardLabel}\n                    </Typography>\n                  </Stack>\n                  <Box\n                    component=\"img\"\n                    src={card.productImage}\n                    alt={card.productImageAlt}\n                    sx={{\n                      width: `${card.productImageWidth}px`,\n                      height: `${card.productImageHeight}px`,\n                      objectFit: card.productImageFit,\n                      flexShrink: 0,\n                    }}\n                  />\n                </Stack>\n              </Box>\n            </CardContent>\n            </Link>",
+          "element": "<Link\r\n                aria-label=\"Close preregistration\"\r\n                className=\"flex h-10 w-10 items-center justify-center\"\r\n                to=\"/preregister\"\r\n            >\r\n            <CardContent\r\n              sx={{\r\n                p: card.cardPadding,\r\n                \"&:last-child\": { pb: card.cardPadding },\r\n              }}\r\n            >\r\n              <Box\r\n                sx={{\r\n                  aspectRatio: \"1.52\",\r\n                  display: \"flex\",\r\n                  flexDirection: \"column\",\r\n                  justifyContent: \"space-between\",\r\n                  width: \"100%\",\r\n                }}\r\n              >\r\n                <Stack\r\n                  direction=\"row\"\r\n                  justifyContent=\"space-between\"\r\n                  alignItems=\"center\"\r\n                >\r\n                  <Box\r\n                    component=\"img\"\r\n                    src={card.brandImage}\r\n                    alt=\"Buyback logo\"\r\n                    sx={{\r\n                      width: \"63.22px\",\r\n                      height: \"44px\",\r\n                      objectFit: \"cover\",\r\n                      flexShrink: 0,\r\n                    }}\r\n                  />\r\n                  <Typography\r\n                    component=\"p\"\r\n                    variant=\"h1\"\r\n                    sx={{\r\n                      color: theme.palette.text.primary,\r\n                      whiteSpace: \"nowrap\",\r\n                      fontSize: '70px',\r\n                    }}\r\n                  >\r\n                    {card.amount}\r\n                  </Typography>\r\n                </Stack>\r\n                <Stack\r\n                  direction=\"row\"\r\n                  justifyContent=\"space-between\"\r\n                  alignItems=\"center\"\r\n                >\r\n                  <Stack spacing={0.25} justifyContent=\"center\">\r\n                    <Typography\r\n                      component=\"p\"\r\n                      variant=\"h4\"\r\n                      sx={{\r\n                        color: theme.palette.buybak.greenPrimary,\r\n                        whiteSpace: \"nowrap\",\r\n                      }}\r\n                    >\r\n                      {card.reward}\r\n                    </Typography>\r\n                    <Typography\r\n                      component=\"p\"\r\n                      variant=\"caption\"\r\n                      sx={{\r\n                        color: theme.palette.text.secondary,\r\n                        whiteSpace: \"nowrap\",\r\n                      }}\r\n                    >\r\n                      {card.rewardLabel}\r\n                    </Typography>\r\n                  </Stack>\r\n                  <Box\r\n                    component=\"img\"\r\n                    src={card.productImage}\r\n                    alt={card.productImageAlt}\r\n                    sx={{\r\n                      width: `${card.productImageWidth}px`,\r\n                      height: `${card.productImageHeight}px`,\r\n                      objectFit: card.productImageFit,\r\n                      flexShrink: 0,\r\n                    }}\r\n                  />\r\n                </Stack>\r\n              </Box>\r\n            </CardContent>\r\n            </Link>",
           "line": 166,
           "endLine": 255,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src/screens/GiftcardsWeb/sections/GiftCardGridSubsection/GiftCardGridSubsection.tsx"
+          "sourceFile": "src\\screens\\GiftcardsWeb\\sections\\GiftCardGridSubsection\\GiftCardGridSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/Homepage/sections/HeaderSubsection/HeaderSubsection.tsx:72:10-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/Homepage/sections/HeaderSubsection/HeaderSubsection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\Homepage\\sections\\HeaderSubsection\\HeaderSubsection.tsx:76:10-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\Homepage\\sections\\HeaderSubsection\\HeaderSubsection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n            to=\"/preregister\"\n            aria-current={isActiveRoute(\"/preregister\") ? \"page\" : undefined}\n            className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-greens-5-2a-788\"\n          >\n            <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutralsffffff [font-style:var(--web-body-font-style)]\">\n              Pre-register\n            </span>\n          </Link>",
-          "line": 72,
-          "endLine": 80,
+          "element": "<Link\r\n            to=\"/preregister\"\r\n            aria-current={isActiveRoute(\"/preregister\") ? \"page\" : undefined}\r\n            className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-greens-5-2a-788\"\r\n          >\r\n            <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutralsffffff [font-style:var(--web-body-font-style)]\">\r\n              Pre-register\r\n            </span>\r\n          </Link>",
+          "line": 76,
+          "endLine": 84,
           "column": 10,
           "endColumn": 17,
-          "sourceFile": "src/screens/Homepage/sections/HeaderSubsection/HeaderSubsection.tsx"
+          "sourceFile": "src\\screens\\Homepage\\sections\\HeaderSubsection\\HeaderSubsection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/GiftCardOfferingSection/GiftCardOfferingSection.tsx:87:12-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/HomepageWeb/sections/GiftCardOfferingSection/GiftCardOfferingSection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx:55:18-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n                aria-label=\"Close preregistration\"\n                className=\"flex h-10 w-10 items-center justify-center\"\n                to=\"/preregister\"\n            >\n            <CardContent\n              sx={{\n                p: card.cardPadding,\n                \"&:last-child\": { pb: card.cardPadding },\n              }}\n            >\n              <Box\n                sx={{\n                  aspectRatio: \"1.52\",\n                  display: \"flex\",\n                  flexDirection: \"column\",\n                  justifyContent: \"space-between\",\n                  width: \"100%\",\n                }}\n              >\n                <Stack\n                  direction=\"row\"\n                  justifyContent=\"space-between\"\n                  alignItems=\"center\"\n                >\n                  <Box\n                    component=\"img\"\n                    src={card.brandImage}\n                    alt=\"Buyback logo\"\n                    sx={{\n                      width: \"63.22px\",\n                      height: \"44px\",\n                      objectFit: \"cover\",\n                      flexShrink: 0,\n                    }}\n                  />\n                  <Typography\n                    component=\"p\"\n                    variant=\"h1\"\n                    sx={{\n                      color: theme.palette.text.primary,\n                      whiteSpace: \"nowrap\",\n                      fontSize: '70px',\n                    }}\n                  >\n                    {card.amount}\n                  </Typography>\n                </Stack>\n                <Stack\n                  direction=\"row\"\n                  justifyContent=\"space-between\"\n                  alignItems=\"center\"\n                >\n                  <Stack spacing={0.25} justifyContent=\"center\">\n                    <Typography\n                      component=\"p\"\n                      variant=\"h4\"\n                      sx={{\n                        color: theme.palette.buybak.greenPrimary,\n                        whiteSpace: \"nowrap\",\n                      }}\n                    >\n                      {card.reward}\n                    </Typography>\n                    <Typography\n                      component=\"p\"\n                      variant=\"caption\"\n                      sx={{\n                        color: theme.palette.text.secondary,\n                        whiteSpace: \"nowrap\",\n                      }}\n                    >\n                      {card.rewardLabel}\n                    </Typography>\n                  </Stack>\n                  <Box\n                    component=\"img\"\n                    src={card.productImage}\n                    alt={card.productImageAlt}\n                    sx={{\n                      width: `${card.productImageWidth}px`,\n                      height: `${card.productImageHeight}px`,\n                      objectFit: card.productImageFit,\n                      flexShrink: 0,\n                    }}\n                  />\n                </Stack>\n              </Box>\n            </CardContent>\n            </Link>",
+          "element": "<Link\r\n                    key={action.label}\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to={action.to}\r\n                  >\r\n                      <Button\r\n                        key={action.label}\r\n                        variant={action.variant}\r\n                        color={action.color}\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                          {action.label}\r\n                      </Button>\r\n                  </Link>",
+          "line": 55,
+          "endLine": 73,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx:55:18-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "data": {
+        "viaRoute": "/contactpopup",
+        "trigger": {
+          "element": "<Link\r\n                    key={action.label}\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to={action.to}\r\n                  >\r\n                      <Button\r\n                        key={action.label}\r\n                        variant={action.variant}\r\n                        color={action.color}\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                          {action.label}\r\n                      </Button>\r\n                  </Link>",
+          "line": 55,
+          "endLine": 73,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\ClosingCallToActionSection\\ClosingCallToActionSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\GiftCardOfferingSection\\GiftCardOfferingSection.tsx:87:12-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\GiftCardOfferingSection\\GiftCardOfferingSection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
+      "data": {
+        "viaRoute": "/preregister",
+        "trigger": {
+          "element": "<Link\r\n                aria-label=\"Close preregistration\"\r\n                className=\"flex h-10 w-10 items-center justify-center\"\r\n                to=\"/preregister\"\r\n            >\r\n            <CardContent\r\n              sx={{\r\n                p: card.cardPadding,\r\n                \"&:last-child\": { pb: card.cardPadding },\r\n              }}\r\n            >\r\n              <Box\r\n                sx={{\r\n                  aspectRatio: \"1.52\",\r\n                  display: \"flex\",\r\n                  flexDirection: \"column\",\r\n                  justifyContent: \"space-between\",\r\n                  width: \"100%\",\r\n                }}\r\n              >\r\n                <Stack\r\n                  direction=\"row\"\r\n                  justifyContent=\"space-between\"\r\n                  alignItems=\"center\"\r\n                >\r\n                  <Box\r\n                    component=\"img\"\r\n                    src={card.brandImage}\r\n                    alt=\"Buyback logo\"\r\n                    sx={{\r\n                      width: \"63.22px\",\r\n                      height: \"44px\",\r\n                      objectFit: \"cover\",\r\n                      flexShrink: 0,\r\n                    }}\r\n                  />\r\n                  <Typography\r\n                    component=\"p\"\r\n                    variant=\"h1\"\r\n                    sx={{\r\n                      color: theme.palette.text.primary,\r\n                      whiteSpace: \"nowrap\",\r\n                      fontSize: '70px',\r\n                    }}\r\n                  >\r\n                    {card.amount}\r\n                  </Typography>\r\n                </Stack>\r\n                <Stack\r\n                  direction=\"row\"\r\n                  justifyContent=\"space-between\"\r\n                  alignItems=\"center\"\r\n                >\r\n                  <Stack spacing={0.25} justifyContent=\"center\">\r\n                    <Typography\r\n                      component=\"p\"\r\n                      variant=\"h4\"\r\n                      sx={{\r\n                        color: theme.palette.buybak.greenPrimary,\r\n                        whiteSpace: \"nowrap\",\r\n                      }}\r\n                    >\r\n                      {card.reward}\r\n                    </Typography>\r\n                    <Typography\r\n                      component=\"p\"\r\n                      variant=\"caption\"\r\n                      sx={{\r\n                        color: theme.palette.text.secondary,\r\n                        whiteSpace: \"nowrap\",\r\n                      }}\r\n                    >\r\n                      {card.rewardLabel}\r\n                    </Typography>\r\n                  </Stack>\r\n                  <Box\r\n                    component=\"img\"\r\n                    src={card.productImage}\r\n                    alt={card.productImageAlt}\r\n                    sx={{\r\n                      width: `${card.productImageWidth}px`,\r\n                      height: `${card.productImageHeight}px`,\r\n                      objectFit: card.productImageFit,\r\n                      flexShrink: 0,\r\n                    }}\r\n                  />\r\n                </Stack>\r\n              </Box>\r\n            </CardContent>\r\n            </Link>",
           "line": 87,
           "endLine": 176,
           "column": 12,
           "endColumn": 19,
-          "sourceFile": "src/screens/HomepageWeb/sections/GiftCardOfferingSection/GiftCardOfferingSection.tsx"
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\GiftCardOfferingSection\\GiftCardOfferingSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:108:6-to-src/screens/ContactPopUp/ContactPopUp.tsx",
-      "source": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx",
-      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
-      "data": {
-        "viaRoute": "/contactpopup",
-        "trigger": {
-          "element": "<Link\n\t\t\t\t\tkey={item.label}\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n\t\t\t\t\tto={item.to}\n\t\t\t\t  >\n\n\t\t\t\t  <Button\n\t\t\t\t\tvariant=\"contained\"\n\t\t\t\t\tcolor=\"primary\"\n\t\t\t\t\thref=\"#pre-register\"\n\t\t\t\t\tsx={{\n\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t  px: 8,\n\t\t\t\t\t  py: 2,\n\t\t\t\t\t}}\n\t\t\t\t  >\n\t\t\t\t\t  {item.label}\n          \t\t  </Button>\n\t\t\t\t  </Link>",
-          "line": 108,
-          "endLine": 127,
-          "column": 6,
-          "endColumn": 13,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
-        }
-      }
-    },
-    {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:108:6-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx:86:18-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n\t\t\t\t\tkey={item.label}\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\n\t\t\t\t\tto={item.to}\n\t\t\t\t  >\n\n\t\t\t\t  <Button\n\t\t\t\t\tvariant=\"contained\"\n\t\t\t\t\tcolor=\"primary\"\n\t\t\t\t\thref=\"#pre-register\"\n\t\t\t\t\tsx={{\n\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t  px: 8,\n\t\t\t\t\t  py: 2,\n\t\t\t\t\t}}\n\t\t\t\t  >\n\t\t\t\t\t  {item.label}\n          \t\t  </Button>\n\t\t\t\t  </Link>",
-          "line": 108,
-          "endLine": 127,
-          "column": 6,
-          "endColumn": 13,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "element": "<Link\r\n                    key={action.label}\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to={action.to}\r\n                  >\r\n                      <Button\r\n                        key={action.label}\r\n                        variant={action.variant}\r\n                        color={action.color}\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                          {action.label}\r\n                      </Button>\r\n                  </Link>",
+          "line": 86,
+          "endLine": 104,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:133:6-to-src/screens/ContactPopUp/ContactPopUp.tsx",
-      "source": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx",
-      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx:86:18-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
       "data": {
         "viaRoute": "/contactpopup",
         "trigger": {
-          "element": "<Link\n\t\t\t\t\tkey={item.label}\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\n\t\t\t\t\tto={item.to}\n\t\t\t\t  >\n\t\t\t\t\t  <Button\n\t\t\t\t\t\tvariant=\"outlined\"\n\t\t\t\t\t\tcolor=\"secondary\"\n\t\t\t\t\t\thref=\"#contact-us\"\n\t\t\t\t\t\tsx={{\n\t\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t\t  px: 8,\n\t\t\t\t\t\t  py: 2,\n\t\t\t\t\t\t}}\n\t\t\t\t\t  >\n\t\t\t\t\t  \t{item.label}\n\t\t\t\t\t  </Button>\n\t\t\t\t  </Link>",
-          "line": 133,
-          "endLine": 151,
-          "column": 6,
-          "endColumn": 13,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "element": "<Link\r\n                    key={action.label}\r\n                    aria-current=\"page\"\r\n                    className=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n                    to={action.to}\r\n                  >\r\n                      <Button\r\n                        key={action.label}\r\n                        variant={action.variant}\r\n                        color={action.color}\r\n                        sx={{\r\n                          minWidth: \"auto\",\r\n                          px: 8,\r\n                          py: 2,\r\n                        }}\r\n                      >\r\n                          {action.label}\r\n                      </Button>\r\n                  </Link>",
+          "line": 86,
+          "endLine": 104,
+          "column": 18,
+          "endColumn": 25,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\HeroFeatureSection\\HeroFeatureSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:133:6-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
-      "data": {
-        "viaRoute": "/preregister",
-        "trigger": {
-          "element": "<Link\n\t\t\t\t\tkey={item.label}\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\n\t\t\t\t\tto={item.to}\n\t\t\t\t  >\n\t\t\t\t\t  <Button\n\t\t\t\t\t\tvariant=\"outlined\"\n\t\t\t\t\t\tcolor=\"secondary\"\n\t\t\t\t\t\thref=\"#contact-us\"\n\t\t\t\t\t\tsx={{\n\t\t\t\t\t\t  minWidth: \"auto\",\n\t\t\t\t\t\t  px: 8,\n\t\t\t\t\t\t  py: 2,\n\t\t\t\t\t\t}}\n\t\t\t\t\t  >\n\t\t\t\t\t  \t{item.label}\n\t\t\t\t\t  </Button>\n\t\t\t\t  </Link>",
-          "line": 133,
-          "endLine": 151,
-          "column": 6,
-          "endColumn": 13,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
-        }
-      }
-    },
-    {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:156:4-to-src/screens/ContactPopUp/ContactPopUp.tsx",
-      "source": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx",
-      "target": "src/screens/ContactPopUp/ContactPopUp.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:110:6-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
       "data": {
         "viaRoute": "/contactpopup",
         "trigger": {
-          "element": "<Link\n\t\t\t\t  key={item.label}\n\t\t\t\t  aria-current={isActive ? \"page\" : undefined}\n\t\t\t\t  className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\n\t\t\t\t  to={item.to}\n\t\t\t\t>\n\t\t\t\t  <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\n\t\t\t\t\t{item.label}\n\t\t\t\t  </span>\n\t\t\t\t</Link>",
-          "line": 156,
-          "endLine": 165,
-          "column": 4,
-          "endColumn": 11,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "element": "<Link\r\n\t\t\t\t\tkey={item.label}\r\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\r\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n\t\t\t\t\tto={item.to}\r\n\t\t\t\t  >\r\n\r\n\t\t\t\t  <Button\r\n\t\t\t\t\tvariant=\"contained\"\r\n\t\t\t\t\tcolor=\"primary\"\r\n\t\t\t\t\thref=\"#pre-register\"\r\n\t\t\t\t\tsx={{\r\n\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t}}\r\n\t\t\t\t  >\r\n\t\t\t\t\t  {item.label}\r\n          \t\t  </Button>\r\n\t\t\t\t  </Link>",
+          "line": 110,
+          "endLine": 129,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
         }
       }
     },
     {
-      "id": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx:156:4-to-src/screens/Preregister/Preregister.tsx",
-      "source": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx",
-      "target": "src/screens/Preregister/Preregister.tsx",
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:110:6-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
       "data": {
         "viaRoute": "/preregister",
         "trigger": {
-          "element": "<Link\n\t\t\t\t  key={item.label}\n\t\t\t\t  aria-current={isActive ? \"page\" : undefined}\n\t\t\t\t  className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\n\t\t\t\t  to={item.to}\n\t\t\t\t>\n\t\t\t\t  <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\n\t\t\t\t\t{item.label}\n\t\t\t\t  </span>\n\t\t\t\t</Link>",
-          "line": 156,
-          "endLine": 165,
-          "column": 4,
-          "endColumn": 11,
-          "sourceFile": "src/screens/HomepageWeb/sections/PrimaryNavigationSection/PrimaryNavigationSection.tsx"
+          "element": "<Link\r\n\t\t\t\t\tkey={item.label}\r\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\r\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2\"\r\n\t\t\t\t\tto={item.to}\r\n\t\t\t\t  >\r\n\r\n\t\t\t\t  <Button\r\n\t\t\t\t\tvariant=\"contained\"\r\n\t\t\t\t\tcolor=\"primary\"\r\n\t\t\t\t\thref=\"#pre-register\"\r\n\t\t\t\t\tsx={{\r\n\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t}}\r\n\t\t\t\t  >\r\n\t\t\t\t\t  {item.label}\r\n          \t\t  </Button>\r\n\t\t\t\t  </Link>",
+          "line": 110,
+          "endLine": 129,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:135:6-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "data": {
+        "viaRoute": "/contactpopup",
+        "trigger": {
+          "element": "<Link\r\n\t\t\t\t\tkey={item.label}\r\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\r\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\r\n\t\t\t\t\tto={item.to}\r\n\t\t\t\t  >\r\n\t\t\t\t\t  <Button\r\n\t\t\t\t\t\tvariant=\"outlined\"\r\n\t\t\t\t\t\tcolor=\"secondary\"\r\n\t\t\t\t\t\thref=\"#contact-us\"\r\n\t\t\t\t\t\tsx={{\r\n\t\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t\t}}\r\n\t\t\t\t\t  >\r\n\t\t\t\t\t  \t{item.label}\r\n\t\t\t\t\t  </Button>\r\n\t\t\t\t  </Link>",
+          "line": 135,
+          "endLine": 153,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:135:6-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
+      "data": {
+        "viaRoute": "/preregister",
+        "trigger": {
+          "element": "<Link\r\n\t\t\t\t\tkey={item.label}\r\n\t\t\t\t\taria-current={isActive ? \"page\" : undefined}\r\n\t\t\t\t\tclassName=\"inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] border border-solid border-greens-5-2a-788 bg-neutralsfafbfa px-8 py-2\"\r\n\t\t\t\t\tto={item.to}\r\n\t\t\t\t  >\r\n\t\t\t\t\t  <Button\r\n\t\t\t\t\t\tvariant=\"outlined\"\r\n\t\t\t\t\t\tcolor=\"secondary\"\r\n\t\t\t\t\t\thref=\"#contact-us\"\r\n\t\t\t\t\t\tsx={{\r\n\t\t\t\t\t\t  minWidth: \"auto\",\r\n\t\t\t\t\t\t  px: 8,\r\n\t\t\t\t\t\t  py: 2,\r\n\t\t\t\t\t\t}}\r\n\t\t\t\t\t  >\r\n\t\t\t\t\t  \t{item.label}\r\n\t\t\t\t\t  </Button>\r\n\t\t\t\t  </Link>",
+          "line": 135,
+          "endLine": 153,
+          "column": 6,
+          "endColumn": 13,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:159:12-to-src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx",
+      "target": "src\\screens\\ContactPopUp\\ContactPopUp.tsx",
+      "data": {
+        "viaRoute": "/contactpopup",
+        "trigger": {
+          "element": "<Link\r\n              key={item.label}\r\n              aria-current={isActive ? \"page\" : undefined}\r\n              className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\r\n              to={item.to}\r\n            >\r\n              <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\r\n                {item.label}\r\n              </span>\r\n            </Link>",
+          "line": 159,
+          "endLine": 168,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
+        }
+      }
+    },
+    {
+      "id": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx:159:12-to-src\\screens\\Preregister\\Preregister.tsx",
+      "source": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx",
+      "target": "src\\screens\\Preregister\\Preregister.tsx",
+      "data": {
+        "viaRoute": "/preregister",
+        "trigger": {
+          "element": "<Link\r\n              key={item.label}\r\n              aria-current={isActive ? \"page\" : undefined}\r\n              className=\"inline-flex flex-[0_0_auto] items-center justify-center gap-2.5\"\r\n              to={item.to}\r\n            >\r\n              <span className=\"relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]\">\r\n                {item.label}\r\n              </span>\r\n            </Link>",
+          "line": 159,
+          "endLine": 168,
+          "column": 12,
+          "endColumn": 19,
+          "sourceFile": "src\\screens\\HomepageWeb\\sections\\PrimaryNavigationSection\\PrimaryNavigationSection.tsx"
         }
       }
     }

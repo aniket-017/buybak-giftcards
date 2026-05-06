@@ -1,18 +1,20 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
+
+const GIFT_CARDS_URL = "https://buybak.giftygen.com/";
 
 const actions = [
   {
     label: "Browse Gift Cards",
     variant: "contained" as const,
     color: "primary" as const,
-    to: "/preregister"
+    href: GIFT_CARDS_URL,
   },
   {
     label: "Learn More",
     variant: "outlined" as const,
     color: "secondary" as const,
-    to: "/contactpopup"
+    to: "/contactpopup",
   },
 ];
 
@@ -82,27 +84,46 @@ export const HeroFeatureSection = (): JSX.Element => {
             flexWrap="wrap"
             useFlexGap
           >
-          {actions.map((action) => (
-                  <Link
-                    key={action.label}
-                    aria-current="page"
-                    className="inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2"
-                    to={action.to}
+            {actions.map((action) =>
+              action.href ? (
+                <a
+                  key={action.label}
+                  className="inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2"
+                  href={action.href}
+                >
+                  <Button
+                    variant={action.variant}
+                    color={action.color}
+                    sx={{
+                      minWidth: "auto",
+                      px: 8,
+                      py: 2,
+                    }}
                   >
-                      <Button
-                        key={action.label}
-                        variant={action.variant}
-                        color={action.color}
-                        sx={{
-                          minWidth: "auto",
-                          px: 8,
-                          py: 2,
-                        }}
-                      >
-                          {action.label}
-                      </Button>
-                  </Link>
-          ))}
+                    {action.label}
+                  </Button>
+                </a>
+              ) : (
+                <Link
+                  key={action.label}
+                  aria-current="page"
+                  className="inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-8 py-2"
+                  to={action.to}
+                >
+                  <Button
+                    variant={action.variant}
+                    color={action.color}
+                    sx={{
+                      minWidth: "auto",
+                      px: 8,
+                      py: 2,
+                    }}
+                  >
+                    {action.label}
+                  </Button>
+                </Link>
+              ),
+            )}
           </Stack>
         </Stack>
         <Box

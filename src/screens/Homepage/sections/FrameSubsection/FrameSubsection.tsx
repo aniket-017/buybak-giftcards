@@ -14,10 +14,12 @@ const Item = styled(Paper)(({ theme }) => ({
 }));
 
 export const FrameSubsection = (): JSX.Element => {
+  const GIFT_CARDS_URL = "https://buybak.giftygen.com/";
+
   const actions = [
     {
       label: "Browse Gift Cards",
-      href: "#",
+      href: GIFT_CARDS_URL,
       variant: "primary" as const,
     },
     {

@@ -2,7 +2,11 @@ import { Link, useLocation } from "react-router-dom";
 
 const navItems = [
   { label: "Benefits", href: "#benefits", type: "anchor" as const },
-  { label: "Gift Cards", href: "/gift-cards", type: "route" as const },
+  {
+    label: "Gift Cards",
+    href: "https://buybak.giftygen.com/",
+    type: "anchor" as const,
+  },
 ];
 
 export const HeaderSubsection = (): JSX.Element => {

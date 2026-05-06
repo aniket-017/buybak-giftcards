@@ -12,6 +12,8 @@ const actions = [
 ];
 
 export const Frame3Subsection = (): JSX.Element => {
+  const GIFT_CARDS_URL = "https://buybak.giftygen.com/";
+
   return (
     <section
       aria-labelledby="frame3-subsection-heading"
@@ -36,6 +38,13 @@ export const Frame3Subsection = (): JSX.Element => {
               <button
                 key={action.label}
                 type={action.type}
+                onClick={
+                  isPrimary
+                    ? () => {
+                        window.location.href = GIFT_CARDS_URL;
+                      }
+                    : undefined
+                }
                 className={
                   isPrimary
                     ? "relative inline-flex flex-[0_0_auto] items-center justify-center rounded-[100px] bg-greens-2d-6a-4f px-10 py-5 transition-opacity hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-greens-2d-6a-4f"

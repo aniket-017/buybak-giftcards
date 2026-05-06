@@ -12,12 +12,14 @@ import buybakLogo from "../../../../assets/images/buybak_logo.png";
 
 const navItems = [
   { label: "Benefits", href: "#benefits" },
-  { label: "Gift Cards", href: "#gift-cards" },
+  { label: "Gift Cards", href: "https://buybak.giftygen.com/" },
   { label: "Contact Us", to: "/contactpopup", variant: "outline" as const },
   { label: "Pre-register", to: "/preregister", variant: "solid" as const },
 ];
 
 export const PrimaryNavigationSection = (): JSX.Element => {
+  const location = useLocation();
+
   return (
     <AppBar
       position="fixed"
@@ -152,18 +154,32 @@ export const PrimaryNavigationSection = (): JSX.Element => {
 				);
 			  }
 
-			  return (
-				<Link
-				  key={item.label}
-				  aria-current={isActive ? "page" : undefined}
-				  className="inline-flex flex-[0_0_auto] items-center justify-center gap-2.5"
-				  to={item.to}
-				>
-				  <span className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] text-[length:var(--web-body-font-size)] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]">
-					{item.label}
-				  </span>
-				</Link>
-			  );
+			  if (item.to) {
+          return (
+            <Link
+              key={item.label}
+              aria-current={isActive ? "page" : undefined}
+              className="inline-flex flex-[0_0_auto] items-center justify-center gap-2.5"
+              to={item.to}
+            >
+              <span className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]">
+                {item.label}
+              </span>
+            </Link>
+          );
+        }
+
+        return (
+          <a
+            key={item.label}
+            className="inline-flex flex-[0_0_auto] items-center justify-center gap-2.5"
+            href={item.href}
+          >
+            <span className="relative mt-[-1.00px] w-fit whitespace-nowrap text-center font-web-body text-[25px] font-[number:var(--web-body-font-weight)] leading-[var(--web-body-line-height)] tracking-[var(--web-body-letter-spacing)] text-neutrals-7a-8a-85 [font-style:var(--web-body-font-style)]">
+              {item.label}
+            </span>
+          </a>
+        );
           })}
 		</Stack>
       </Toolbar>
