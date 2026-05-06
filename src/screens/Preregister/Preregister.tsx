@@ -48,7 +48,6 @@ export const Preregister = (): JSX.Element => {
           alignItems: "center",
           justifyContent: "center",
           bgcolor: 'white',
-          position: "relative",
           zIndex: 4,
         }}
       >

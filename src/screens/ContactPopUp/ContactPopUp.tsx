@@ -31,7 +31,7 @@ export const ContactPopUp = (): JSX.Element => {
       <Stack
 		spacing={2}
         sx={{
-          position: 'absolute', 
+          position: 'relative', 
           top: '-102px', 
           margin: 0, // Prevents default margin interference
           width: "80%",
@@ -50,7 +50,6 @@ export const ContactPopUp = (): JSX.Element => {
           alignItems: "center",
           justifyContent: "center",
           bgcolor: 'white',
-          position: "relative",
           zIndex: 4,
         }}
       >
