@@ -1,0 +1,1 @@
+export { GiftCardCatalogSection } from "./GiftCardCatalogSection";

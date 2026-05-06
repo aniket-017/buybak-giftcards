@@ -1,52 +1,62 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Checkout } from "./screens/Checkout";
-import { CheckoutScreen } from "./screens/CheckoutScreen";
-import { CheckoutWrapper } from "./screens/CheckoutWrapper";
-import { Contact } from "./screens/Contact";
-import { GiftCards } from "./screens/GiftCards";
-import { Homepage } from "./screens/Homepage";
+import { HomepageWeb } from "./screens/HomepageWeb";
 import { Preregister } from "./screens/Preregister";
 import { PreregisterSuccess } from "./screens/PreregisterSuccess";
+import { CheckoutPopUp } from "./screens/CheckoutPopUp";
+import { CheckoutPopUpScreen } from "./screens/CheckoutPopUpScreen";
+import { CheckoutPopUpWrapper } from "./screens/CheckoutPopUpWrapper";
+import { ContactPopUp } from "./screens/ContactPopUp";
+import { GiftcardsWeb } from "./screens/GiftcardsWeb";
+import { GiftcardsTablet } from "./screens/GiftcardsTablet";
+import { PreRegisterPopUp } from "./screens/PreRegisterPopUp";
+import { PreRegisterSuccess } from "./screens/PreRegisterSuccess";
 
 const router = createBrowserRouter([
   {
     path: "/*",
-    element: <Homepage />,
+    element: <HomepageWeb />,
   },
   {
-    path: "/homepage",
-    element: <Homepage />,
-  },
-  {
-    path: "/preregisteru47success",
-    element: <PreregisterSuccess />,
-  },
-  {
-    path: "/checkout4",
-    element: <Checkout />,
-  },
-  {
-    path: "/checkout3",
-    element: <CheckoutScreen />,
+    path: "/homepageweb",
+    element: <HomepageWeb />,
   },
   {
     path: "/preregister",
     element: <Preregister />,
   },
   {
-    path: "/contact",
-    element: <Contact />,
+    path: "/contactpopup",
+    element: <ContactPopUp />,
   },
   {
-    path: "/checkout2",
-    element: <CheckoutWrapper />,
+    path: "/preregistersuccesspopup",
+    element: <PreRegisterSuccess />,
   },
   {
-    path: "/gift-cards",
-    element: <GiftCards />,
+    path: "/preregisterpopup",
+    element: <PreRegisterPopUp />,
+  },
+  {
+    path: "/checkoutpopup2",
+    element: <CheckoutPopUp />,
+  },
+  {
+    path: "/checkoutpopup3",
+    element: <CheckoutPopUpScreen />,
+  },
+  {
+    path: "/checkoutpopup",
+    element: <CheckoutPopUpWrapper />,
+  },
+  {
+    path: "/giftcardsu47web",
+    element: <GiftcardsWeb />,
+  },
+  {
+    path: "/giftcardstablet",
+    element: <GiftcardsTablet />,
   },
 ]);
-
 export const App = () => {
   return <RouterProvider router={router} />;
 };

@@ -1,0 +1,1 @@
+export { GiftcardsTablet } from "./GiftcardsTablet";

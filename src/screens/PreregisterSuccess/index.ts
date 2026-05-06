@@ -1,1 +1,1 @@
-export { PreregisterSuccess } from "./PreregisterSuccess";
+export { PreRegisterSuccess } from "./PreRegisterSuccess";
